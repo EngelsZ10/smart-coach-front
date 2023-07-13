@@ -6,15 +6,11 @@ import './navigationScreen.css';
 function NavScreen(){
     return(
       <MantineProvider withGlobalStyles withNormalizeCSS>
-      <img src="SteelersLogo.png" alt="Mantine logo" className="imgcenter"/>
-      <Text style = {{marginLeft:'14%', fontSize:'Larger', marginBottom: '1%'}}>Pagina de inicio</Text>
-      
-      <div className="border">
 
         <div style = {{marginTop: '2%'}}>
           <img src="SteelersLogo.png" alt="Mantine logo" className="imgcenter"/>
-          <Text className="center">BIENVENIDO A SMART COACH</Text>
-          <Text className="center">ELIJA LA OPCIÓN DESEADA DANDO CLICK EN EL RECUADRO</Text>
+          <b><Text className="center">BIENVENIDO A SMART COACH</Text></b>
+          <b><Text className="center" style={{color:'#f58342'}}>ELIJA LA OPCIÓN DESEADA DANDO CLICK EN EL RECUADRO</Text></b>
         </div>
 
         <div>
@@ -68,7 +64,6 @@ function NavScreen(){
 
         </div>
 
-      </div>
     </MantineProvider>
     )
 }
