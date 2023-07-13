@@ -1,0 +1,35 @@
+.navButton{
+    margin-top: 2%;
+    margin-left: 25%;
+    width: 100px;
+    height: 50px;
+}
+
+.imgcenter{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.border{
+    border: 3px solid black;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2%;
+}
+
+.center{
+    text-align: center;
+}
+
+.navText{
+    margin-left: 2%;
+    font-size: larger;
+    vertical-align: middle;
+}
+
+.navOption{
+  display: 'flex';
+  align-items: 'center';
+}
