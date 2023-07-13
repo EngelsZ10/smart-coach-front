@@ -1,13 +1,14 @@
 import { Link } from "react-router-dom";
+import "./docCoach.css";
 
 function DocCoach() {
   return (
-    <div>
-      <Link to="/">
-        <button>BACK</button>
-      </Link>
-      <h1>DocCoach</h1>
-    </div>
+        <div className="docCoach">
+          <Link to="/">
+            <button>BACK</button>
+          </Link>
+          <h1>Documentos Coaches</h1>
+        </div>
   );
 }
 
