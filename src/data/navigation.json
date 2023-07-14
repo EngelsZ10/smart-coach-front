@@ -1,0 +1,259 @@
+{
+  "views": [
+
+    {
+      "id": "scout",
+      "title": "video scout",
+      "navData": [
+        {
+          "category": "ofensa",
+          "image": "https://cdn.pixabay.com/photo/2013/02/06/05/45/football-78394_1280.jpg",
+          "target": "/ofensa"
+        },
+        {
+          "category": "defensa",
+          "image": "https://cdn.pixabay.com/photo/2013/02/06/05/45/football-78394_1280.jpg",
+          "target": "/defensa"
+        },
+        {
+          "category": "equipos especiales",
+          "image": "https://cdn.pixabay.com/photo/2013/02/06/05/45/football-78394_1280.jpg",
+          "target": "/especiales"
+        }
+      ]
+    },
+
+    {
+      "id": "steelers",
+      "title": "video steelers",
+      "navData": [
+        {
+          "category": "ofensa",
+          "image": "https://cdn.pixabay.com/photo/2013/02/06/05/45/football-78394_1280.jpg",
+          "target": "/ofensa"
+        },
+        {
+          "category": "defensa",
+          "image": "https://cdn.pixabay.com/photo/2013/02/06/05/45/football-78394_1280.jpg",
+          "target": "/defensa"
+        },
+        {
+          "category": "equipos especiales",
+          "image": "https://cdn.pixabay.com/photo/2013/02/06/05/45/football-78394_1280.jpg",
+          "target": "/especiales"
+        }
+      ]
+    },
+
+    {
+      "id": "defensa",
+      "title": "defensa",
+      "navData": [
+        {
+          "category": "corrida izq",
+          "image": "https://cdn.pixabay.com/photo/2013/02/06/05/45/football-78394_1280.jpg",
+          "target": "/corrida-izq/videos"
+        },
+        {
+          "category": "corrida centro",
+          "image": "https://cdn.pixabay.com/photo/2013/02/06/05/45/football-78394_1280.jpg",
+          "target": "/corrida-centro/videos"
+        },
+        {
+          "category": "corrida derecha",
+          "image": "https://cdn.pixabay.com/photo/2013/02/06/05/45/football-78394_1280.jpg",
+          "target": "/corrida-derecha/videos"
+        },
+        {
+          "category": "pase izq",
+          "image": "https://cdn.pixabay.com/photo/2013/02/06/05/45/football-78394_1280.jpg",
+          "target": "/pase-izq/videos"
+        },
+        {
+          "category": "pase centro",
+          "image": "https://cdn.pixabay.com/photo/2013/02/06/05/45/football-78394_1280.jpg",
+          "target": "/pase-centro/videos"
+        },
+        {
+          "category": "pase derecha",
+          "image": "https://cdn.pixabay.com/photo/2013/02/06/05/45/football-78394_1280.jpg",
+          "target": "/pase-derecha/videos"
+        }
+      ]
+    },
+
+    {
+      "id": "ofensa",
+      "title": "ofensa",
+      "navData": [
+        {
+          "category": "corrida izq",
+          "image": "https://cdn.pixabay.com/photo/2013/02/06/05/45/football-78394_1280.jpg",
+          "target": "/corrida-izq/videos"
+        },
+        {
+          "category": "corrida centro",
+          "image": "https://cdn.pixabay.com/photo/2013/02/06/05/45/football-78394_1280.jpg",
+          "target": "/corrida-centro/videos"
+        },
+        {
+          "category": "corrida derecha",
+          "image": "https://cdn.pixabay.com/photo/2013/02/06/05/45/football-78394_1280.jpg",
+          "target": "/corrida-derecha/videos"
+        },
+        {
+          "category": "pase izq",
+          "image": "https://cdn.pixabay.com/photo/2013/02/06/05/45/football-78394_1280.jpg",
+          "target": "/pase-izq/videos"
+        },
+        {
+          "category": "pase centro",
+          "image": "https://cdn.pixabay.com/photo/2013/02/06/05/45/football-78394_1280.jpg",
+          "target": "/pase-centro/videos"
+        },
+        {
+          "category": "pase derecha",
+          "image": "https://cdn.pixabay.com/photo/2013/02/06/05/45/football-78394_1280.jpg",
+          "target": "/pase-derecha/videos"
+        }
+      ]
+    },
+
+    {
+      "id": "especiales",
+      "title": "equipos especiales",
+      "navData": [
+        {
+          "category": "kick off",
+          "image": "https://cdn.pixabay.com/photo/2013/02/06/05/45/football-78394_1280.jpg",
+          "target": "/kick-off/videos"
+
+        },
+        {
+          "category": "kick off return",
+          "image": "https://cdn.pixabay.com/photo/2013/02/06/05/45/football-78394_1280.jpg",
+          "target": "/kick-off-return/videos"
+        },
+        {
+          "category": "patada de despeje",
+          "image": "https://cdn.pixabay.com/photo/2013/02/06/05/45/football-78394_1280.jpg",
+          "target": "/patada-de-despeje/videos"
+        },
+        {
+          "category": "regreso de despeje",
+          "image": "https://cdn.pixabay.com/photo/2013/02/06/05/45/football-78394_1280.jpg",
+          "target": "/regreso-de-despeje/videos"
+        },
+        {
+          "category": "punto extra",
+          "image": "https://cdn.pixabay.com/photo/2013/02/06/05/45/football-78394_1280.jpg",
+          "target": "/punto-extra/videos"
+        },
+        {
+          "category": "jugada de engaño",
+          "image": "https://cdn.pixabay.com/photo/2013/02/06/05/45/football-78394_1280.jpg",
+          "target": "/jugada-de-engaño/videos"
+        }
+      ]
+    },
+
+    {
+      "id": "drills",
+      "title": "drills de posición",
+      "navData": [
+        {
+          "category": "linea ofensiva",
+          "image": "https://cdn.pixabay.com/photo/2013/02/06/05/45/football-78394_1280.jpg",
+          "target": "/linea-ofensiva/videos"
+        },
+        {
+          "category": "corredores",
+          "image": "https://cdn.pixabay.com/photo/2013/02/06/05/45/football-78394_1280.jpg",
+          "target": "/corredores/videos"
+        },
+        {
+          "category": "qb",
+          "image": "https://cdn.pixabay.com/photo/2013/02/06/05/45/football-78394_1280.jpg",
+          "target": "/qb/videos"
+        },
+        {
+          "category": "receptores y alas c.",
+          "image": "https://cdn.pixabay.com/photo/2013/02/06/05/45/football-78394_1280.jpg",
+          "target": "/receptores-y-alas-c./videos"
+        },
+        {
+          "category": "linea de defensiva",
+          "image": "https://cdn.pixabay.com/photo/2013/02/06/05/45/football-78394_1280.jpg",
+          "target": "/linea-de-defensiva/videos"
+        },
+        {
+          "category": "linebackers",
+          "image": "https://cdn.pixabay.com/photo/2013/02/06/05/45/football-78394_1280.jpg",
+          "target": "/linebackers/videos"
+        },
+        {
+          "category": "perimetro",
+          "image": "https://cdn.pixabay.com/photo/2013/02/06/05/45/football-78394_1280.jpg",
+          "target": "/perimetro/videos"
+        },
+        {
+          "category": "pateadores",
+          "image": "https://cdn.pixabay.com/photo/2013/02/06/05/45/football-78394_1280.jpg",
+          "target": "/pateadores/videos"
+        }
+      ]
+    },
+
+    {
+      "id": "acondicionamiento",
+      "title": "acondicionamiento físico",
+      "navData": [
+        {
+          "category": "ligas",
+          "image": "https://cdn.pixabay.com/photo/2013/02/06/05/45/football-78394_1280.jpg",
+          "target": "/ligas"
+        },
+        {
+          "category": "gym",
+          "image": "https://cdn.pixabay.com/photo/2013/02/06/05/45/football-78394_1280.jpg",
+          "target": "/gym"
+        }
+      ]
+    },
+
+    {
+      "id": "ligas",
+      "title": "ligas",
+      "navData": [
+        {
+          "category": "linea ofensiva",
+          "image": "https://cdn.pixabay.com/photo/2013/02/06/05/45/football-78394_1280.jpg",
+          "target": "/linea-ofensiva/videos"
+        },
+        {
+          "category": "corredores",
+          "image": "https://cdn.pixabay.com/photo/2013/02/06/05/45/football-78394_1280.jpg",
+          "target": "/corredores/videos"
+        }
+      ]
+    },
+
+    {
+      "id": "gym",
+      "title": "gym",
+      "navData": [
+        {
+          "category": "linea de defensiva",
+          "image": "https://cdn.pixabay.com/photo/2013/02/06/05/45/football-78394_1280.jpg",
+          "target": "/linea-de-defensiva/videos"
+        },
+        {
+          "category": "linebackers",
+          "image": "https://cdn.pixabay.com/photo/2013/02/06/05/45/football-78394_1280.jpg",
+          "target": "/linebackers/videos"
+        }
+      ]
+    }
+
+  ]
+}

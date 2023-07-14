@@ -20,13 +20,13 @@ function NavScreen(){
         <div>
 
           <div className='navOption'>
-            <Link to="/videosScout">
+            <Link to="/scout">
             <button className="navButton" style={{ backgroundColor: 'yellow', borderColor: 'black' }}></button>
             </Link>
             <span className="navText">VIDEOS SCOUT</span>
           </div>
           <div className='navOption'>
-            <Link to="/videosSteelers">
+            <Link to="/steelers">
             <button className="navButton" style={{ backgroundColor: 'black', borderColor: 'yellow' }}></button>
             </Link>
             <span className="navText">VIDEOS STEELERS</span>
@@ -38,7 +38,7 @@ function NavScreen(){
             <span className="navText">DRILLS</span>
           </div>
           <div className='navOption'>
-            <Link to="/acondicionamientoFisico">
+            <Link to="/acondicionamiento">
             <button className="navButton" style={{ backgroundColor: 'red', borderColor: 'gold' }}></button>
             </Link>
             <span className="navText">ACONDICIONAMIENTO FISICO</span>

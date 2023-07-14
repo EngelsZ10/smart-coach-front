@@ -9,18 +9,24 @@ import PlayBook from './pages/playbook';
 import DocCoach from './pages/docCoach';
 import DocAdm from './pages/docAdm';
 
+import CategoryView from './components/CategoryView';
+
 export default function App() {
   return (
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<NavScreen/>} />
-            <Route path="/videosScout" element={<VidScout />} />
+            {/* <Route path="/videosScout" element={<VidScout />} />
             <Route path="/videosSteelers" element={<VidSteel />} />
             <Route path="/drills" element={<Drills />} />
             <Route path="/acondicionamientoFisico" element={<AcFisico />} />
             <Route path="/playbook" element={<PlayBook />} />
             <Route path="/documentosCoaches" element={<DocCoach />} />
-            <Route path="/documentosAdministracion" element={<DocAdm />} />
+            <Route path="/documentosAdministracion" element={<DocAdm />} /> */}
+
+            <Route path="/:categoria" element={<CategoryView />} />
+            <Route path="/:categoria/:subcategoria" element={<CategoryView />} />
+
           </Routes>
         </BrowserRouter>
   );
