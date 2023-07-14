@@ -157,6 +157,7 @@
   "drills": {
     "title": "drills de posición",
     "theme": "white",
+    "columns": 4,
     "items": [
       {
         "category": "linea ofensiva",
@@ -204,6 +205,7 @@
   "acondicionamiento": {
     "title": "acondicionamiento físico",
     "theme": "red",
+    "columns": 2,
     "items": [
       {
         "category": "ligas",
@@ -329,6 +331,7 @@
   "coaches": {
     "title": "documentos coaches",
     "theme": "light-blue",
+    "columns": 4,
     "items": [
       {
         "category": "reglamentos coaches",
@@ -356,6 +359,7 @@
   "administracion": {
     "title": "documentos administración",
     "theme": "light-blue",
+    "columns": 4,
     "items": [
       {
         "category": "reglamentos padres",
