@@ -50,13 +50,13 @@ function NavScreen(){
             <span className="navText">PLAYBOOK</span>
           </div>
           <div className='navOption'>
-            <Link to="/documentosCoaches">
+            <Link to="/coaches">
             <button className="navButton" style={{ backgroundColor: 'teal', borderColor: 'black' }}></button>
             </Link>
             <span className="navText">DOCUMENTOS COACHES</span>
           </div>
           <div className='navOption'>
-            <Link to="/documentosAdministracion">
+            <Link to="/administracion">
             <button className="navButton" style={{ backgroundColor: 'turquoise', borderColor: 'black' }}></button>
             </Link>
             <span className="navText">DOCUMENTOS ADMINISTRACION</span>
