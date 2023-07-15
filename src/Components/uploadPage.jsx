@@ -1,5 +1,6 @@
 import { Group, Button, TextInput, Text, Modal } from "@mantine/core";
 import { Dropzone, MIME_TYPES } from "@mantine/dropzone";
+import { DropzoneButton } from "./Dropdown";
 
 export default function Demo({ open, close }) {
   return (
@@ -12,14 +13,7 @@ export default function Demo({ open, close }) {
         radius="md"
         centered
       >
-        <Text size="sm" mb="xs" weight={500}>
-          Subscribe to email newsletter
-        </Text>
-
-        <Group align="flex-end">
-          <TextInput placeholder="hello@gluesticker.com" sx={{ flex: 1 }} />
-          <Button onClick={close}>Subscribe</Button>
-        </Group>
+        <DropzoneButton></DropzoneButton>
       </Modal>
     </>
   );
