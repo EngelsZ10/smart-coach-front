@@ -223,6 +223,7 @@
   "ligas": {
     "title": "ligas",
     "theme": "red",
+    "columns": 2,
     "items": [
       {
         "category": "linea ofensiva",
@@ -240,6 +241,7 @@
   "gym": {
     "title": "gym",
     "theme": "red",
+    "columns": 2,
     "items": [
       {
         "category": "linea de defensiva",
