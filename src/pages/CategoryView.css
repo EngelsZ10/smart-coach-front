@@ -167,6 +167,12 @@
   max-width: 310px;
 }
 
+@media screen and (min-width: 2000px) {
+  .subcategory-list.cols--2 .nav-item {
+    max-width: 500px;
+  }
+}
+
 .subcategory-list.cols--3 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
