@@ -7,14 +7,21 @@ function CategoryView({ viewData }) {
 
   const title = getTitle(viewData, location.pathname);
   const theme = getTheme(viewData, location.pathname);
+  const buttonContent = getButtonContent(location.pathname);
   const columns = viewData.columns || 3;
   const items = viewData.items;
+
 
   return (
     <div className={`view view--${theme}`}>
       <header className="view__header">
-        <h3 className="header__title">{title}</h3>
-        <button onClick={() => navigate(-1)}>Volver</button>
+        <div class="container">
+          <h3 className="header__title">{title}</h3>
+          <button className="header__button" onClick={() => navigate(-1)}>
+            <i className="fa fa-solid fa-arrow-left"></i>
+            Volver a {buttonContent}
+          </button>
+        </div>
         <figure className="header__logo"><img src="SteelersLogoWithName.png" alt="Logo" /></figure>
       </header>
       <section className={`subcategory-list cols--${columns}`}>
@@ -59,6 +66,15 @@ function getTheme(viewData, url) {
     return theme;
   }
   return viewData.theme;
+}
+
+function getButtonContent(url) {
+  const path = url.substring(1).split('/');
+  const prevPageIdx = path.length - 2; // Retrieve the category of the second to last element of url
+  if (prevPageIdx >= 0) {
+    return path[prevPageIdx];
+  }
+  return "menu";
 }
 
 export default CategoryView;
