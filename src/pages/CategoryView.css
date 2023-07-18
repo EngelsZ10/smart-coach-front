@@ -120,6 +120,10 @@
   gap: 8rem;
 }
 
+.subcategory-list.cols--2 .nav-item {
+  max-width: 320px;
+}
+
 .subcategory-list.cols--3 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
