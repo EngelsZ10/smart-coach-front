@@ -14,6 +14,7 @@ function CategoryView({ viewData }) {
     <div className={`view view--${theme}`}>
       <header className="view__header">
         <h3 className="header__title">{title}</h3>
+        <button onClick={() => navigate(-1)}>Volver</button>
         <figure className="header__logo"><img src="SteelersLogoWithName.png" alt="Logo" /></figure>
       </header>
       <section className={`subcategory-list cols--${columns}`}>

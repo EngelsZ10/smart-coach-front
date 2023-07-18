@@ -97,6 +97,7 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 4rem;
+  padding-top: 3rem;
 }
 
 .header__title {
@@ -107,6 +108,7 @@
 }
 
 .header__logo {
+  margin: 0;
   width: 16rem;
 }
 
