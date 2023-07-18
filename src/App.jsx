@@ -37,15 +37,6 @@ export default function App() {
 
             <Route path="playbook">
               <Route index element={<CategoryView viewData={navigation.playbook}/>}/>
-              <Route path="juvenil" element={<CategoryView viewData={navigation.playbookSubcategories}/>}/>
-              <Route path="baby" element={<CategoryView viewData={navigation.playbookSubcategories}/>}/>
-              <Route path="flag" element={<CategoryView viewData={navigation.playbookSubcategories}/>}/>
-              <Route path="infantil-1" element={<CategoryView viewData={navigation.playbookSubcategories}/>}/>
-              <Route path="infantil-2" element={<CategoryView viewData={navigation.playbookSubcategories}/>}/>
-              <Route path="infantil-3" element={<CategoryView viewData={navigation.playbookSubcategories}/>}/>
-              <Route path="infantil-4" element={<CategoryView viewData={navigation.playbookSubcategories}/>}/>
-              <Route path="infantil-5" element={<CategoryView viewData={navigation.playbookSubcategories}/>}/>
-              <Route path="infantil-6" element={<CategoryView viewData={navigation.playbookSubcategories}/>}/>
             </Route>
 
             <Route path="coaches">

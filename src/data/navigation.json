@@ -259,58 +259,6 @@
     "theme": "blue",
     "items": [
       {
-        "category": "playbook juvenil",
-        "image": "https://cdn.pixabay.com/photo/2013/02/06/05/45/football-78394_1280.jpg",
-        "target": "juvenil"
-      },
-      {
-        "category": "playbook baby",
-        "image": "https://cdn.pixabay.com/photo/2013/02/06/05/45/football-78394_1280.jpg",
-        "target": "baby"
-      },
-      {
-        "category": "playbook flag",
-        "image": "https://cdn.pixabay.com/photo/2013/02/06/05/45/football-78394_1280.jpg",
-        "target": "flag"
-      },
-      {
-        "category": "playbook infantil 1",
-        "image": "https://cdn.pixabay.com/photo/2013/02/06/05/45/football-78394_1280.jpg",
-        "target": "infantil-1"
-      },
-      {
-        "category": "playbook infantil 2",
-        "image": "https://cdn.pixabay.com/photo/2013/02/06/05/45/football-78394_1280.jpg",
-        "target": "infantil-2"
-      },
-      {
-        "category": "playbook infantil 3",
-        "image": "https://cdn.pixabay.com/photo/2013/02/06/05/45/football-78394_1280.jpg",
-        "target": "infantil-3"
-      },
-      {
-        "category": "playbook infantil 4",
-        "image": "https://cdn.pixabay.com/photo/2013/02/06/05/45/football-78394_1280.jpg",
-        "target": "infantil-4"
-      },
-      {
-        "category": "playbook infantil 5",
-        "image": "https://cdn.pixabay.com/photo/2013/02/06/05/45/football-78394_1280.jpg",
-        "target": "infantil-5"
-      },
-      {
-        "category": "playbook infantil 6",
-        "image": "https://cdn.pixabay.com/photo/2013/02/06/05/45/football-78394_1280.jpg",
-        "target": "infantil-6"
-      }
-    ]
-  },
-
-  "playbookSubcategories": {
-    "title": "parent",
-    "theme": "blue",
-    "items": [
-      {
         "category": "ofensa",
         "image": "https://cdn.pixabay.com/photo/2013/02/06/05/45/football-78394_1280.jpg",
         "target": "ofensa/documentos"
