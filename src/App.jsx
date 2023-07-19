@@ -8,6 +8,7 @@ import AcFisico from './pages/acFisico';
 import PlayBook from './pages/playbook';
 import DocCoach from './pages/docCoach';
 import DocAdm from './pages/docAdm';
+import MostrarVideo from './pages/mostrarVideo';
 
 export default function App() {
   return (
