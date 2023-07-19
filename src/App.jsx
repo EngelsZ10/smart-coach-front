@@ -21,6 +21,7 @@ export default function App() {
             <Route path="/playbook" element={<PlayBook />} />
             <Route path="/documentosCoaches" element={<DocCoach />} />
             <Route path="/documentosAdministracion" element={<DocAdm />} />
+            <Route path="/video" element={<MostrarVideo />} />
           </Routes>
         </BrowserRouter>
   );
