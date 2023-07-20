@@ -7,6 +7,9 @@ function VidScout() {
         <button>BACK</button>
       </Link>
       <h1>vidScout</h1>
+      <Link to="/video">
+        <button>Video</button>
+      </Link>
     </div>
   );
 }

@@ -8,7 +8,7 @@ import AcFisico from './pages/acFisico';
 import PlayBook from './pages/playbook';
 import DocCoach from './pages/docCoach';
 import DocAdm from './pages/docAdm';
-import PdfPage from './pages/pdfPage';
+import MostrarVideo from './pages/mostrarVideo';
 
 export default function App() {
   return (
@@ -23,6 +23,7 @@ export default function App() {
             <Route path="/documentosCoaches" element={<DocCoach />} />
             <Route path="/documentosCoaches/pdf" element={<PdfPage />} />
             <Route path="/documentosAdministracion" element={<DocAdm />} />
+            <Route path="/video" element={<MostrarVideo />} />
           </Routes>
         </BrowserRouter>
   );
