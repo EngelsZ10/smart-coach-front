@@ -21,7 +21,6 @@ export default function App() {
             <Route path="/acondicionamientoFisico" element={<AcFisico />} />
             <Route path="/playbook" element={<PlayBook />} />
             <Route path="/documentosCoaches" element={<DocCoach />} />
-            <Route path="/documentosCoaches/pdf" element={<PdfPage />} />
             <Route path="/documentosAdministracion" element={<DocAdm />} />
             <Route path="/video" element={<MostrarVideo />} />
           </Routes>
