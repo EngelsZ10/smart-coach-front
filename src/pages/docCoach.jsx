@@ -1,18 +1,18 @@
 import { Link } from "react-router-dom";
 import { Group, Text, useMantineTheme, rem } from '@mantine/core';
 import { IconUpload, IconPhoto, IconX } from '@tabler/icons-react';
-import { Dropzone, DropzoneProps, IMAGE_MIME_TYPE } from '@mantine/dropzone';
+import { Dropzone, DropzoneProps, MIME_TYPES } from '@mantine/dropzone';
 
 import "./docCoach.css";
 
 export function DocCoach(props: Partial<DropzoneProps>) {
   const theme = useMantineTheme({
     primaryColor: 'blue',
-    colorScheme: 'dark', // O 'light' si prefieres un esquema claro
+    colorScheme: 'dark',
     colors: {
       blue: ['#007bff', '#0056b3', '#0089ff'],
       orange: ['#ff9800', '#d77a00', '#ffae33'],
-      // Aquí puedes definir más colores personalizados si lo necesitas
+   
     },
   });
   return (
@@ -32,7 +32,7 @@ export function DocCoach(props: Partial<DropzoneProps>) {
       onDrop={(files) => console.log('accepted files', files)}
       onReject={(files) => console.log('rejected files', files)}
       maxSize={3 * 1024 ** 2}
-      accept={IMAGE_MIME_TYPE}
+      accept={MIME_TYPES}
       {...props}
     >
       <Group position="center" spacing="xl" style={{ minHeight: rem(220), pointerEvents: 'none' }}>

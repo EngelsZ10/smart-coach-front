@@ -1,5 +1,6 @@
+
 body{
-    background-color: #6c8cc7;
+    background-color: #00ADEF;
     border: 5px solid #ffcb04;
     height: 98.8vh; 
 }
@@ -37,12 +38,25 @@ body{
     width: 300px;
     background-color: white;
 }
+.Grupo{
+    height: 138px;
+    display: flex;
+    flexDirection: column;
+    pointerEvents: none;
+}
+
 @media screen and (max-width: 1428px) {
     .pdfview{
         height: 150px;
         width: 250px;
     }
+    .Grupo{
+        height: 113px;
+        
+    }
 }
+
+
 
 .pdfcase{
     margin-left: auto;
