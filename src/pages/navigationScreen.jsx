@@ -14,14 +14,14 @@ function NavScreen(){
 
         <div className='navOptions'>
 
-            <Link to="/videosScout" className='Link'>
+            <Link to="/scout" className='Link'>
               <div className='navOption'>
                 <button className="navButton" style={{ backgroundColor: 'yellow', borderColor: 'black' }}></button>
                 <span className="navText">VIDEOS SCOUT</span>
               </div>
             </Link>
 
-            <Link to="/videosSteelers" className='Link'>
+            <Link to="/steelers" className='Link'>
               <div className='navOption'>
                 <button className="navButton" style={{ backgroundColor: 'black', borderColor: 'yellow' }}></button>
                 <span className="navText">VIDEOS STEELERS</span>
@@ -35,7 +35,7 @@ function NavScreen(){
               </div>
             </Link>
 
-            <Link to="/acondicionamientoFisico" className='Link'>
+            <Link to="/acondicionamiento" className='Link'>
               <div className='navOption'>
                 <button className="navButton" style={{ backgroundColor: 'red', borderColor: 'gold' }}></button>
                 <span className="navText">ACONDICIONAMIENTO FISICO</span>
@@ -49,14 +49,14 @@ function NavScreen(){
               </div>
             </Link>
 
-            <Link to="/documentosCoaches" className='Link'>
+            <Link to="/coaches" className='Link'>
               <div className='navOption'>
                 <button className="navButton" style={{ backgroundColor: 'teal', borderColor: 'black' }}></button>
                 <span className="navText">DOCUMENTOS COACHES</span>
               </div>
             </Link>
 
-            <Link to="/documentosAdministracion" className='Link'>
+            <Link to="/administracion" className='Link'>
               <div className='navOption'>
                 <button className="navButton" style={{ backgroundColor: 'turquoise', borderColor: 'black' }}></button>
                 <span className="navText">DOCUMENTOS ADMINISTRACION</span>
