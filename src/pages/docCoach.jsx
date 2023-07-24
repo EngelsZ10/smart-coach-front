@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { Group, Text, useMantineTheme, rem } from '@mantine/core';
-import { IconUpload, IconPhoto, IconX } from '@tabler/icons-react';
-import { Dropzone, DropzoneProps, MIME_TYPES } from '@mantine/dropzone';
+import { IconUpload, IconFileTypePdf, IconX } from '@tabler/icons-react';
+import { Dropzone, DropzoneProps, PDF_MIME_TYPE } from '@mantine/dropzone';
 
 import "./docCoach.css";
 
@@ -32,10 +32,12 @@ export function DocCoach(props: Partial<DropzoneProps>) {
       onDrop={(files) => console.log('accepted files', files)}
       onReject={(files) => console.log('rejected files', files)}
       maxSize={3 * 1024 ** 2}
-      accept={MIME_TYPES}
+      accept={PDF_MIME_TYPE}
       {...props}
+      
+      
     >
-      <Group position="center" spacing="xl" style={{ minHeight: rem(220), pointerEvents: 'none' }}>
+      <Group position="center" spacing="xl" className="Grupo">
         <Dropzone.Accept>
           <IconUpload
             size="3.2rem"
@@ -51,15 +53,12 @@ export function DocCoach(props: Partial<DropzoneProps>) {
           />
         </Dropzone.Reject>
         <Dropzone.Idle>
-          <IconPhoto size="3.2rem" stroke={1.5} />
+          <IconFileTypePdf size="3.2rem" stroke={1.5} />
         </Dropzone.Idle>
 
         <div>
           <Text size="xl" inline>
-            Drag images here or click to select files
-          </Text>
-          <Text size="sm" color="dimmed" inline mt={7}>
-            Attach as many files as you like, each file should not exceed 5mb
+            Inserta el reglamento
           </Text>
         </div>
       </Group>
@@ -72,11 +71,41 @@ export function DocCoach(props: Partial<DropzoneProps>) {
             </div>
             <div className="pdfcase">
               <div className="pdfview">
-              <iframe
-                src="Programa Tec Verano.pdf"
-                title="PDF"
-                height="100%"
-                width="100%"/>
+              <Dropzone
+      onDrop={(files) => console.log('accepted files', files)}
+      onReject={(files) => console.log('rejected files', files)}
+      maxSize={3 * 1024 ** 2}
+      accept={PDF_MIME_TYPE}
+      {...props}
+      
+      
+    >
+      <Group position="center" spacing="xl" className="Grupo">
+        <Dropzone.Accept>
+          <IconUpload
+            size="3.2rem"
+            stroke={1.5}
+            color={theme.colors[theme.primaryColor][theme.colorScheme === 'dark' ? 4 : 6]}
+          />
+        </Dropzone.Accept>
+        <Dropzone.Reject>
+          <IconX
+            size="3.2rem"
+            stroke={1.5}
+            color={theme.colors.red[theme.colorScheme === 'dark' ? 4 : 6]}
+          />
+        </Dropzone.Reject>
+        <Dropzone.Idle>
+          <IconFileTypePdf size="3.2rem" stroke={1.5} />
+        </Dropzone.Idle>
+
+        <div>
+          <Text size="xl" inline>
+            Inserta el reglamento
+          </Text>
+        </div>
+      </Group>
+    </Dropzone>
               </div>
               <Link to="/FormatosCoaches/pdf">
                 <Text className="pdfname">Formatos Coaches</Text>
@@ -84,7 +113,41 @@ export function DocCoach(props: Partial<DropzoneProps>) {
             </div>
             <div className="pdfcase">
               <div className="pdfview">
+              <Dropzone
+      onDrop={(files) => console.log('accepted files', files)}
+      onReject={(files) => console.log('rejected files', files)}
+      maxSize={3 * 1024 ** 2}
+      accept={PDF_MIME_TYPE}
+      {...props}
+      
+      
+    >
+      <Group position="center" spacing="xl" className="Grupo">
+        <Dropzone.Accept>
+          <IconUpload
+            size="3.2rem"
+            stroke={1.5}
+            color={theme.colors[theme.primaryColor][theme.colorScheme === 'dark' ? 4 : 6]}
+          />
+        </Dropzone.Accept>
+        <Dropzone.Reject>
+          <IconX
+            size="3.2rem"
+            stroke={1.5}
+            color={theme.colors.red[theme.colorScheme === 'dark' ? 4 : 6]}
+          />
+        </Dropzone.Reject>
+        <Dropzone.Idle>
+          <IconFileTypePdf size="3.2rem" stroke={1.5} />
+        </Dropzone.Idle>
 
+        <div>
+          <Text size="xl" inline>
+            Inserta el reglamento
+          </Text>
+        </div>
+      </Group>
+    </Dropzone>
               </div>
               <Link to="/ONEFA/pdf">
                 <Text className="pdfname">Reglamento ONEFA</Text>
@@ -92,7 +155,41 @@ export function DocCoach(props: Partial<DropzoneProps>) {
             </div>
             <div className="pdfcase">
               <div className="pdfview">
+              <Dropzone
+      onDrop={(files) => console.log('accepted files', files)}
+      onReject={(files) => console.log('rejected files', files)}
+      maxSize={3 * 1024 ** 2}
+      accept={PDF_MIME_TYPE}
+      {...props}
+      
+      
+    >
+      <Group position="center" spacing="xl" className="Grupo">
+        <Dropzone.Accept>
+          <IconUpload
+            size="3.2rem"
+            stroke={1.5}
+            color={theme.colors[theme.primaryColor][theme.colorScheme === 'dark' ? 4 : 6]}
+          />
+        </Dropzone.Accept>
+        <Dropzone.Reject>
+          <IconX
+            size="3.2rem"
+            stroke={1.5}
+            color={theme.colors.red[theme.colorScheme === 'dark' ? 4 : 6]}
+          />
+        </Dropzone.Reject>
+        <Dropzone.Idle>
+          <IconFileTypePdf size="3.2rem" stroke={1.5} />
+        </Dropzone.Idle>
 
+        <div>
+          <Text size="xl" inline>
+            Inserta el reglamento
+          </Text>
+        </div>
+      </Group>
+    </Dropzone>
               </div>
               <Link to="/OFANO/pdf">
                 <Text className="pdfname">Reglamento OFANO</Text>
