@@ -22,7 +22,7 @@ function CategoryView({ viewData }) {
             Volver a {buttonContent}
           </button>
         </div>
-        <figure className="header__logo"><img src="SteelersLogoWithName.png" alt="Logo" /></figure>
+        <figure className="header__logo"><img src="/SteelersLogoWithName.png" alt="Logo" /></figure>
       </header>
       <section className={`subcategory-list cols--${columns}`}>
         {items.map(item => (
