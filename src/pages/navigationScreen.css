@@ -1,0 +1,90 @@
+.navButton{
+    width: 100px;
+    height: 50px;
+}
+
+.Link {
+    color: inherit;
+    text-decoration: none;
+  }
+
+.navOptions{
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.imgcenter{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.center{
+    text-align: center;
+    font-size:larger;
+}
+
+.navText{
+    margin-left: 2%;
+    font-size: larger;
+    vertical-align: middle;
+}
+.navText:hover{
+    text-decoration: underline;
+}
+.navText:active{
+    color: rgb(92, 92, 92);
+}
+
+.navOption{
+  display: 'flex';
+  align-items: 'center';
+  vertical-align: middle;
+  margin-top: .75%;
+  margin-bottom: .75%;
+}
+.navOption:hover{
+    background-color: whitesmoke;
+}
+.navOption:active{
+    background-color: rgb(236, 236, 236);
+}
+
+@media screen and (min-width: 1300px){
+    .navButton{
+        width: 100px;
+        height: 50px;
+    }
+    .navOptions{
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+}
+@media screen and (min-width: 1600px){
+    .navButton{
+        width: 125px;
+        height: 75px;
+    }
+    .navOptions{
+        margin-left: 30%;
+        margin-right: 30%;
+    }
+    .navOption{
+        margin-top: 1.5%;
+        margin-bottom: 1.5%;
+    }
+}
+@media screen and (min-width: 2100px){
+    .navButton{
+        width: 160px;
+        height: 90px;
+    }
+    .navOptions{
+        margin-left: 35%;
+        margin-right: 35%;
+    }
+    .navOption{
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+}
