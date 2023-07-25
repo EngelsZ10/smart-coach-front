@@ -41,15 +41,15 @@ function CategoryView({ viewData }) {
 }
 
 function getTitle(viewData, url) {
-  if(viewData.title == "parent") {
-    const title = url.replace(/[\/-]/g, " ")
+  if(viewData.title === "parent") {
+    const title = url.replace(/[-]/g, " ")
     return title;
   }
   return viewData.title;
 }
 
 function getTheme(viewData, url) {
-  if(viewData.theme == "parent") {
+  if(viewData.theme === "parent") {
     const view = url.split('/')[1];
     let theme;
     switch(view) {
