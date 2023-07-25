@@ -35,7 +35,7 @@ function CategoryView({ viewData }) {
             className="nav-item" 
             key={item.category}
             onClick={() => { navigate(item.target) }}  
-          >          
+          >
             <figure className="item__image">
               {stelscout === "steelers" ? (
                 <img src={item.image2} alt={`category-${item.category}`} />
