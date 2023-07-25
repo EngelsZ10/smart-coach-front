@@ -73,14 +73,14 @@
 
 @media screen and (min-width: 1300px){
     .navOptions{
-        margin-left: 25%;
+        margin-left: 5%;
         margin-right: 5%;
     }
 
 }
 @media screen and (min-width: 1600px){
     .navOptions{
-        margin-left: 30%;
+        margin-left: 10%;
         margin-right: 21%;
     }
     .navOption{
@@ -88,10 +88,27 @@
         margin-bottom: 1.5%;
     }
 }
+@media screen and (min-width: 1900px){
+
+    .navOptions{
+        margin-left: 13%;
+        margin-right: 20%;
+    }
+    .navOption{
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+    .navText{
+        font-size: 3.5rem;
+    }
+    .center{
+        font-size: 5rem;
+    }
+}
 @media screen and (min-width: 2100px){
 
     .navOptions{
-        margin-left: 35%;
+        margin-left: 20%;
         margin-right: 20%;
     }
     .navOption{
