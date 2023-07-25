@@ -43,7 +43,7 @@ function CategoryView({ viewData }) {
                 <img src={item.image} alt={`category-${item.category}`} />
               )}
             </figure>
-<div className="item__category">{item.category}</div>
+            <div className="item__category">{item.category}</div>
           </div>
         ))}
       </section>
@@ -52,15 +52,15 @@ function CategoryView({ viewData }) {
 }
 
 function getTitle(viewData, url) {
-  if(viewData.title == "parent") {
-    const title = url.replace(/[\/-]/g, " ")
+  if(viewData.title === "parent") {
+    const title = url.replace(/[-]/g, " ")
     return title;
   }
   return viewData.title;
 }
 
 function getTheme(viewData, url) {
-  if(viewData.theme == "parent") {
+  if(viewData.theme === "parent") {
     const view = url.split('/')[1];
     let theme;
     switch(view) {
