@@ -5,17 +5,17 @@
     "items": [
       {
         "category": "ofensa",
-        "image": "https://cdn.pixabay.com/photo/2013/02/06/05/45/football-78394_1280.jpg",
+        "image": "Logos/VideoScout/video scout ofensa.png",
         "target": "ofensa"
       },
       {
         "category": "defensa",
-        "image": "https://cdn.pixabay.com/photo/2013/02/06/05/45/football-78394_1280.jpg",
+        "image": "Logos/VideoScout/video scout defensa.png",
         "target": "defensa"
       },
       {
         "category": "equipos especiales",
-        "image": "https://cdn.pixabay.com/photo/2013/02/06/05/45/football-78394_1280.jpg",
+        "image": "Logos/VideoScout/video scout equipos especiales.png",
         "target": "especiales"
       }
     ]
@@ -27,17 +27,17 @@
     "items": [
       {
         "category": "ofensa",
-        "image": "https://cdn.pixabay.com/photo/2013/02/06/05/45/football-78394_1280.jpg",
+        "image": "Logos/VideoSteelers/video steelers ofensa.png",
         "target": "ofensa"
       },
       {
         "category": "defensa",
-        "image": "https://cdn.pixabay.com/photo/2013/02/06/05/45/football-78394_1280.jpg",
+        "image": "Logos/VideoSteelers/video steelers defensa.png",
         "target": "defensa"
       },
       {
         "category": "equipos especiales",
-        "image": "https://cdn.pixabay.com/photo/2013/02/06/05/45/football-78394_1280.jpg",
+        "image": "Logos/VideoSteelers/video steelers equipos especiales.png",
         "target": "especiales"
       }
     ]
@@ -49,32 +49,38 @@
     "items": [
       {
         "category": "corrida izq",
-        "image": "https://cdn.pixabay.com/photo/2013/02/06/05/45/football-78394_1280.jpg",
+        "image": "/Logos/VideoScout/video scout ofensa corrida izq.png",
+        "image2": "/Logos/VideoSteelers/video steelers ofensa corrida izq.png",
         "target": "corrida-izq/videos"
       },
       {
         "category": "corrida centro",
-        "image": "https://cdn.pixabay.com/photo/2013/02/06/05/45/football-78394_1280.jpg",
+        "image": "/Logos/VideoScout/video scout ofensa corrida centro.png",
+        "image2": "/Logos/VideoSteelers/video steelers ofensa corrida centro.png",
         "target": "corrida-centro/videos"
       },
       {
         "category": "corrida derecha",
-        "image": "https://cdn.pixabay.com/photo/2013/02/06/05/45/football-78394_1280.jpg",
+        "image": "/Logos/VideoScout/video scout ofensa corrida derecha.png",
+        "image2": "/Logos/VideoSteelers/video steelers ofensa corrida derecha.png",
         "target": "corrida-derecha/videos"
       },
       {
         "category": "pase izq",
-        "image": "https://cdn.pixabay.com/photo/2013/02/06/05/45/football-78394_1280.jpg",
+        "image": "/Logos/VideoScout/video scout ofensa pase izq.png",
+        "image2": "/Logos/VideoSteelers/video steelers ofensa pase izq.png",
         "target": "pase-izq/videos"
       },
       {
         "category": "pase centro",
-        "image": "https://cdn.pixabay.com/photo/2013/02/06/05/45/football-78394_1280.jpg",
+        "image": "/Logos/VideoScout/video scout ofensa pase centro.png",
+        "image2": "/Logos/VideoSteelers/video steelers ofensa pase centro.png",
         "target": "pase-centro/videos"
       },
       {
         "category": "pase derecha",
-        "image": "https://cdn.pixabay.com/photo/2013/02/06/05/45/football-78394_1280.jpg",
+        "image": "/Logos/VideoScout/video scout ofensa pase derecho.png",
+        "image2": "/Logos/VideoSteelers/video steelers ofensa pase derecha.png",
         "target": "pase-derecha/videos"
       }
     ]
@@ -86,32 +92,38 @@
     "items": [
       {
         "category": "corrida izq",
-        "image": "https://cdn.pixabay.com/photo/2013/02/06/05/45/football-78394_1280.jpg",
+        "image": "/Logos/VideoScout/video scout defensa corrida izquierda.png",
+        "image2": "/Logos/VideoSteelers/video steelers defensa corrida izq.png",
         "target": "corrida-izq/videos"
       },
       {
         "category": "corrida centro",
-        "image": "https://cdn.pixabay.com/photo/2013/02/06/05/45/football-78394_1280.jpg",
+        "image": "/Logos/VideoScout/video scout defensa corrida centro.png",
+        "image2": "/Logos/VideoSteelers/video steelers defensa corrida centro.png",
         "target": "corrida-centro/videos"
       },
       {
         "category": "corrida derecha",
-        "image": "https://cdn.pixabay.com/photo/2013/02/06/05/45/football-78394_1280.jpg",
+        "image": "/Logos/VideoScout/video scout defensa corrida derecha.png",
+        "image2": "/Logos/VideoSteelers/video steelers defensa corrida derecha.png",
         "target": "corrida-derecha/videos"
       },
       {
         "category": "pase izq",
-        "image": "https://cdn.pixabay.com/photo/2013/02/06/05/45/football-78394_1280.jpg",
+        "image": "/Logos/VideoScout/video scout defensa pase izquierdo.png",
+        "image2": "/Logos/VideoSteelers/video steelers defensa pase izq.png",
         "target": "pase-izq/videos"
       },
       {
         "category": "pase centro",
-        "image": "https://cdn.pixabay.com/photo/2013/02/06/05/45/football-78394_1280.jpg",
+        "image": "/Logos/VideoScout/video scout defensa pase centro.png",
+        "image2": "/Logos/VideoSteelers/video steeles defensa pase centro.png",
         "target": "pase-centro/videos"
       },
       {
         "category": "pase derecha",
-        "image": "https://cdn.pixabay.com/photo/2013/02/06/05/45/football-78394_1280.jpg",
+        "image": "/Logos/VideoScout/video scout defensa pase derecho.png",
+        "image2": "/Logos/VideoSteelers/video steelers defensa pase derecho.png",
         "target": "pase-derecha/videos"
       }
     ]
@@ -123,32 +135,38 @@
     "items": [
       {
         "category": "kick off",
-        "image": "https://cdn.pixabay.com/photo/2013/02/06/05/45/football-78394_1280.jpg",
+        "image": "/Logos/VideoScout/video scout equipos esp kick off.png",
+        "image2": "/Logos/VideoSteelers/video steelers equipos esp kick off.png",
         "target": "kick-off/videos"
       },
       {
         "category": "kick off return",
-        "image": "https://cdn.pixabay.com/photo/2013/02/06/05/45/football-78394_1280.jpg",
+        "image": "/Logos/VideoScout/video scout equipos esp kick off return.png",
+        "image2": "/Logos/VideoSteelers/video steelers equipos esp kick off return.png",
         "target": "kick-off-return/videos"
       },
       {
         "category": "patada de despeje",
-        "image": "https://cdn.pixabay.com/photo/2013/02/06/05/45/football-78394_1280.jpg",
+        "image": "/Logos/VideoScout/video scout equipos esp patada de despeje.png",
+        "image2": "/Logos/VideoSteelers/video steelers equipos esp patada de despeje.png",
         "target": "patada-de-despeje/videos"
       },
       {
         "category": "regreso de despeje",
-        "image": "https://cdn.pixabay.com/photo/2013/02/06/05/45/football-78394_1280.jpg",
+        "image": "/Logos/VideoScout/video scout equipos esp regreso de despeje.png",
+        "image2": "/Logos/VideoSteelers/vidieo steelers equipos esp regreso de despeje.png",
         "target": "regreso-de-despeje/videos"
       },
       {
         "category": "punto extra",
-        "image": "https://cdn.pixabay.com/photo/2013/02/06/05/45/football-78394_1280.jpg",
+        "image": "/Logos/VideoScout/video scout equipos esp punto extra y gol de campo.png",
+        "image2": "/Logos/VideoSteelers/video steelers equipos especiales punto extra y gol de campo.png",
         "target": "punto-extra/videos"
       },
       {
         "category": "jugada de engaño",
-        "image": "https://cdn.pixabay.com/photo/2013/02/06/05/45/football-78394_1280.jpg",
+        "image": "/Logos/VideoScout/video scout equipos esp jugada de engaño.png",
+        "image2": "/Logos/VideoSteelers/video steelers equipos especiales jugada de engaño.png",
         "target": "jugada-de-engaño/videos"
       }
     ]
@@ -161,42 +179,42 @@
     "items": [
       {
         "category": "linea ofensiva",
-        "image": "https://cdn.pixabay.com/photo/2013/02/06/05/45/football-78394_1280.jpg",
+        "image": "/Logos/drills.png",
         "target": "linea-ofensiva/videos"
       },
       {
         "category": "corredores",
-        "image": "https://cdn.pixabay.com/photo/2013/02/06/05/45/football-78394_1280.jpg",
+        "image": "/Logos/drills.png",
         "target": "corredores/videos"
       },
       {
         "category": "qb",
-        "image": "https://cdn.pixabay.com/photo/2013/02/06/05/45/football-78394_1280.jpg",
+        "image": "/Logos/drills.png",
         "target": "qb/videos"
       },
       {
         "category": "receptores y alas c.",
-        "image": "https://cdn.pixabay.com/photo/2013/02/06/05/45/football-78394_1280.jpg",
+        "image": "/Logos/drills.png",
         "target": "receptores-y-alas-c./videos"
       },
       {
         "category": "linea de defensiva",
-        "image": "https://cdn.pixabay.com/photo/2013/02/06/05/45/football-78394_1280.jpg",
+        "image": "/Logos/drills.png",
         "target": "linea-de-defensiva/videos"
       },
       {
         "category": "linebackers",
-        "image": "https://cdn.pixabay.com/photo/2013/02/06/05/45/football-78394_1280.jpg",
+        "image": "/Logos/drills.png",
         "target": "linebackers/videos"
       },
       {
         "category": "perimetro",
-        "image": "https://cdn.pixabay.com/photo/2013/02/06/05/45/football-78394_1280.jpg",
+        "image": "/Logos/drills.png",
         "target": "perimetro/videos"
       },
       {
         "category": "pateadores",
-        "image": "https://cdn.pixabay.com/photo/2013/02/06/05/45/football-78394_1280.jpg",
+        "image": "/Logos/drills.png",
         "target": "pateadores/videos"
       }
     ]
@@ -209,12 +227,12 @@
     "items": [
       {
         "category": "ligas",
-        "image": "https://cdn.pixabay.com/photo/2013/02/06/05/45/football-78394_1280.jpg",
+        "image": "/Logos/acondicionamiento fisico.png",
         "target": "ligas"
       },
       {
         "category": "gym",
-        "image": "https://cdn.pixabay.com/photo/2013/02/06/05/45/football-78394_1280.jpg",
+        "image": "/Logos/acondicionamiento fisico.png",
         "target": "gym"
       }
     ]
@@ -227,12 +245,12 @@
     "items": [
       {
         "category": "linea ofensiva",
-        "image": "https://cdn.pixabay.com/photo/2013/02/06/05/45/football-78394_1280.jpg",
+        "image": "/Logos/acondicionamiento fisico.png",
         "target": "linea-ofensiva/videos"
       },
       {
         "category": "corredores",
-        "image": "https://cdn.pixabay.com/photo/2013/02/06/05/45/football-78394_1280.jpg",
+        "image": "/Logos/acondicionamiento fisico.png",
         "target": "corredores/videos"
       }
     ]
@@ -245,12 +263,12 @@
     "items": [
       {
         "category": "linea de defensiva",
-        "image": "https://cdn.pixabay.com/photo/2013/02/06/05/45/football-78394_1280.jpg",
+        "image": "/Logos/acondicionamiento fisico.png",
         "target": "linea-de-defensiva/videos"
       },
       {
         "category": "linebackers",
-        "image": "https://cdn.pixabay.com/photo/2013/02/06/05/45/football-78394_1280.jpg",
+        "image": "/Logos/acondicionamiento fisico.png",
         "target": "linebackers/videos"
       }
     ]
@@ -262,17 +280,17 @@
     "items": [
       {
         "category": "ofensa",
-        "image": "https://cdn.pixabay.com/photo/2013/02/06/05/45/football-78394_1280.jpg",
+        "image": "/Logos/playbook.png",
         "target": "ofensa/documentos"
       },
       {
         "category": "defensa",
-        "image": "https://cdn.pixabay.com/photo/2013/02/06/05/45/football-78394_1280.jpg",
+        "image": "/Logos/playbook.png",
         "target": "defensa/documentos"
       },
       {
         "category": "pase",
-        "image": "https://cdn.pixabay.com/photo/2013/02/06/05/45/football-78394_1280.jpg",
+        "image": "/Logos/playbook.png",
         "target": "pase/documentos"
       }
     ]
@@ -285,22 +303,22 @@
     "items": [
       {
         "category": "reglamentos coaches",
-        "image": "https://cdn.pixabay.com/photo/2013/02/06/05/45/football-78394_1280.jpg",
+        "image": "/Logos/documentos Coaches.png",
         "target": "reglamentos-coaches/documentos"
       },
       {
         "category": "formatos coaches",
-        "image": "https://cdn.pixabay.com/photo/2013/02/06/05/45/football-78394_1280.jpg",
+        "image": "/Logos/documentos Coaches.png",
         "target": "formatos-coaches/documentos"
       },
       {
         "category": "reglamento onefa",
-        "image": "https://cdn.pixabay.com/photo/2013/02/06/05/45/football-78394_1280.jpg",
+        "image": "/Logos/documentos Coaches.png",
         "target": "reglamento-onefa/documentos"
       },
       {
         "category": "reglamento ofamo",
-        "image": "https://cdn.pixabay.com/photo/2013/02/06/05/45/football-78394_1280.jpg",
+        "image": "/Logos/documentos Coaches.png",
         "target": "reglamento-ofamo/documentos"
       }
     ]
@@ -313,22 +331,22 @@
     "items": [
       {
         "category": "reglamentos padres",
-        "image": "https://cdn.pixabay.com/photo/2013/02/06/05/45/football-78394_1280.jpg",
+        "image": "/Logos/Documentos Administracion.png",
         "target": "reglamentos-padres/documentos"
       },
       {
         "category": "formatos inscripcion",
-        "image": "https://cdn.pixabay.com/photo/2013/02/06/05/45/football-78394_1280.jpg",
+        "image": "/Logos/Documentos Administracion.png",
         "target": "formatos-inscripcion/documentos"
       },
       {
         "category": "reglamento managers",
-        "image": "https://cdn.pixabay.com/photo/2013/02/06/05/45/football-78394_1280.jpg",
+        "image": "/Logos/Documentos Administracion.png",
         "target": "reglamento-managers/documentos"
       },
       {
         "category": "reglamento jugadores",
-        "image": "https://cdn.pixabay.com/photo/2013/02/06/05/45/football-78394_1280.jpg",
+        "image": "/Logos/Documentos Administracion.png",
         "target": "reglamento-jugadores/documentos"
       }
     ]

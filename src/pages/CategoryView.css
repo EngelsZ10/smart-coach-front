@@ -1,3 +1,12 @@
+@font-face {
+  font-family: 'CarbonBlock';
+  src: url('/public/fonts/CarbonBlock.ttf') format('truetype');
+}
+
+body{
+  font-family: 'CarbonBlock';
+}
+
 .view {
   padding: 0 15%;
   min-height: 100vh;
@@ -8,14 +17,9 @@
   background-color: #ffcc04;
 }
 
-.view--yellow .item__image img {
-  border: 4px solid black;
-}
-
 .view--yellow .header__button {
   border: 2px solid black;
 }
-
 
 .view--black {
   background-color: rgb(17, 17, 17);
@@ -29,24 +33,14 @@
   color: #ffcc04;
 }
 
-.view--black .item__image img {
-  border: 4px solid whitesmoke;
-}
-
 .view--black .header__button {
   border: 2px solid whitesmoke;
   color: whitesmoke;
 }
 
-
-
 .view--white .header__title, .view--white .item__category{
   /* color: #f01c24; */
   color: #1e2177;
-}
-
-.view--white .item__image img {
-  border: 4px solid #f01c24;
 }
 
 .view--white .header__button {
@@ -67,10 +61,6 @@
   color: #ffcc04;
 }
 
-.view--red .item__image img {
-  border: 4px solid black;
-}
-
 .view--red .header__button {
   border: 2px solid whitesmoke;
   color: whitesmoke;
@@ -87,10 +77,6 @@
 
 .view--blue .item__category {
   color: whitesmoke;
-}
-
-.view--blue .item__image img {
-  border: 4px solid #ffcc04;
 }
 
 .view--blue .header__button {
@@ -111,10 +97,6 @@
   color: whitesmoke;
 }
 
-.view--light-blue .item__image img {
-  border: 4px solid #ffcc04;
-}
-
 .view--light-blue .header__button {
   border: 2px solid #ffcc04;
   color: whitesmoke;
@@ -132,19 +114,22 @@
 
 .header__title {
   text-transform: uppercase;
-  font-size: 1.8rem;
+  font-size: 4rem;
   letter-spacing: 1px;
   font-weight: bold;
 }
 
 .header__logo {
-  margin: 0;
-  width: 16rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
 }
 
 .header__logo img {
-  width: 100%;
+  margin: 0 10px;
+  height: 10rem;
 }
+
 
 .header__button {
   cursor: pointer;
@@ -200,7 +185,7 @@
 }
 
 .item__category {
-  font-size: 1.2rem;
+  font-size: 3rem;
   text-transform: uppercase;
   margin: 1rem 0;
   font-weight: bold;
