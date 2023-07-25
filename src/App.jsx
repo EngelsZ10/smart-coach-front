@@ -4,12 +4,15 @@ import './App.css';
 
 import CategoryView from './pages/CategoryView';
 import navigation from './data/navigation.json';
+import VideoList from './pages/VideoList';
 
 export default function App() {
   return (
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<NavScreen/>} />
+
+            <Route path="/video" element={<VideoList/>}/>
 
             <Route path="scout">
               <Route index element={<CategoryView viewData={navigation.scout}/>}/>

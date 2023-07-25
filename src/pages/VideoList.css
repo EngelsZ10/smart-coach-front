@@ -1,0 +1,32 @@
+.list-view {
+  padding: 0 15%;
+}
+
+.video {
+  cursor: pointer;
+}
+
+.video__thumbnail {
+  width: 200px;
+}
+
+.video__name {
+  font-size: 3rem;
+  text-transform: uppercase;
+  margin: 1rem 0;
+  font-weight: bold;
+}
+
+.title {
+  margin-bottom: 4rem;
+  text-transform: uppercase;
+  font-size: 4rem;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+.video-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 3rem;
+}
