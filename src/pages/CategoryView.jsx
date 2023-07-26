@@ -34,7 +34,7 @@ function CategoryView({ viewData }) {
           <div 
             className="nav-item" 
             key={item.category}
-            onClick={() => { navigate(item.target) }}  
+            onClick={() => { if(stelscout === "steelers"){ navigate(item.target2)} else {navigate(item.target)} }}  
           >
             <figure className="item__image">
               {stelscout === "steelers" ? (
