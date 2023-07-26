@@ -1,6 +1,13 @@
+@font-face {
+    font-family: 'CarbonBlock';
+    src: url('/public/fonts/CarbonBlock.ttf') format('truetype');
+  }
+
 .navButton{
-    width: 100px;
-    height: 50px;
+    height: 8rem;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
 }
 
 .Link {
@@ -14,20 +21,29 @@
 }
 
 .imgcenter{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    height: 200px;
+    margin: 0 10px;
+}
+
+.imgcenter-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1%;
+    margin-bottom: 1%;
 }
 
 .center{
     text-align: center;
-    font-size:larger;
+    font-family: 'CarbonBlock';
+    font-size: 4rem;
 }
 
 .navText{
-    margin-left: 2%;
-    font-size: larger;
+    margin-left: 3rem;
+    font-size: 3rem;
     vertical-align: middle;
+    font-family: 'CarbonBlock';
 }
 .navText:hover{
     text-decoration: underline;
@@ -50,41 +66,59 @@
     background-color: rgb(236, 236, 236);
 }
 
+.buttonImage{
+    height: 100%;
+    width: auto;
+}
+
 @media screen and (min-width: 1300px){
-    .navButton{
-        width: 100px;
-        height: 50px;
-    }
     .navOptions{
-        margin-left: 25%;
-        margin-right: 25%;
+        margin-left: 5%;
+        margin-right: 5%;
     }
+
 }
 @media screen and (min-width: 1600px){
-    .navButton{
-        width: 125px;
-        height: 75px;
-    }
     .navOptions{
-        margin-left: 30%;
-        margin-right: 30%;
+        margin-left: 10%;
+        margin-right: 21%;
     }
     .navOption{
         margin-top: 1.5%;
         margin-bottom: 1.5%;
     }
 }
-@media screen and (min-width: 2100px){
-    .navButton{
-        width: 160px;
-        height: 90px;
-    }
+@media screen and (min-width: 1900px){
+
     .navOptions{
-        margin-left: 35%;
-        margin-right: 35%;
+        margin-left: 13%;
+        margin-right: 20%;
     }
     .navOption{
         margin-top: 2%;
         margin-bottom: 2%;
+    }
+    .navText{
+        font-size: 3.5rem;
+    }
+    .center{
+        font-size: 5rem;
+    }
+}
+@media screen and (min-width: 2100px){
+
+    .navOptions{
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+    .navOption{
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+    .navText{
+        font-size: 3.5rem;
+    }
+    .center{
+        font-size: 5rem;
     }
 }
