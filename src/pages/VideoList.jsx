@@ -1,11 +1,36 @@
 import { useEffect, useState } from "react";
-import { useSearchParams } from "react-router-dom";
+import { useNavigate, useSearchParams } from "react-router-dom";
 
 import './VideoList.css';
 
 function VideoList() {
   const [videos, setVideos] = useState([]);
   const [searchParams] = useSearchParams();
+
+  const equipo = searchParams.get('equipo');
+  const categoria = searchParams.get('categoria');
+  const tipo = searchParams.get('tipo');
+
+  const navigate = useNavigate();
+
+  const theme = getTheme();
+
+  function getTheme() {
+    if(equipo) {
+      return equipo === 'steelers' ? 'black' : 'yellow';
+    }
+    let theme;
+    switch(categoria) {
+      case 'drills':
+        theme = 'white';
+        break;
+      case 'acondicionamiento':
+        theme = 'red';
+        break;
+    }
+
+    return theme;
+  };
 
   const handleDrop = (e) => {
     e.preventDefault();
@@ -45,8 +70,20 @@ function VideoList() {
   }, []);
 
   return (
-    <div className="list-view">
-      <h2 className="title">Videos</h2>
+    <div className={`list-view view--${theme}`}>
+      <header className="view__header">
+        <div className="container">
+          <h3 className="header__title">Videos</h3>
+          <button className="header__button" onClick={() => navigate(-1)}>
+            <i className="fa fa-solid fa-arrow-left"></i>
+            Volver
+          </button>
+        </div>
+        <figure className="header__logo">
+          <img src="/Logos/Logo circular1.png" alt="Logo Circular 1" className="Logo"/>  
+          <img src="/Logos/logo texto1.png" alt="Logo texto 1" className="Logo"/>
+        </figure>
+      </header>
       <div className="video-list" onDrop={handleDrop} onDragOver={(e) => e.preventDefault()}>
         {videos.map(video => (
           <div className="video" key={video.id}>

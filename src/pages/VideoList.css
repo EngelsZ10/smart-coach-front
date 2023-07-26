@@ -1,5 +1,132 @@
+/* Customize Themes */
 .list-view {
   padding: 0 15%;
+  min-height: 100vh;
+}
+
+.view--yellow {
+  background-color: #ffcc04;
+}
+
+.view--yellow .header__button {
+  border: 2px solid black;
+}
+
+.view--black {
+  background-color: rgb(17, 17, 17);
+}
+
+.view--black .header__title{
+  color: whitesmoke;
+}
+
+.view--black .video__name {
+  color: #ffcc04;
+}
+
+.view--black .header__button {
+  border: 2px solid whitesmoke;
+  color: whitesmoke;
+}
+
+.view--white .header__title, .view--white .video__name {
+  /* color: #f01c24; */
+  color: #1e2177;
+}
+
+.view--white .header__button {
+  border: 2px solid #1e2177;
+  color: #1e2177;
+}
+
+
+.view--red {
+  background-color: #f01c24;
+}
+
+.view--red .header__title{
+  color: whitesmoke;
+}
+
+.view--red .video__name {
+  color: #ffcc04;
+}
+
+.view--red .header__button {
+  border: 2px solid whitesmoke;
+  color: whitesmoke;
+}
+
+
+.view--blue {
+  background-color: #1e2177;
+}
+
+.view--blue .header__title{
+  color: #ffcc04;
+}
+
+.view--blue .video__name {
+  color: whitesmoke;
+}
+
+.view--blue .header__button {
+  border: 2px solid #ffcc04;
+  color: whitesmoke;
+}
+
+
+.view--light-blue {
+  background-color: #08acec;
+}
+
+.view--light-blue .header__title{
+  color: #ffcc04;
+}
+
+.view--light-blue .video__name {
+  color: whitesmoke;
+}
+
+.view--light-blue .header__button {
+  border: 2px solid #ffcc04;
+  color: whitesmoke;
+}
+
+/* General Styles */
+
+.view__header {
+  padding-top: 3rem;
+  margin-bottom: 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__title {
+  margin-bottom: 4rem;
+  text-transform: uppercase;
+  font-size: 4rem;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+.header__button {
+  cursor: pointer;
+  background: none;
+  padding: .5rem 1rem;  
+  font-size: 1rem;
+}
+
+.header__logo {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.header__logo img {
+  margin: 0 10px;
+  height: 10rem;
 }
 
 .video {
@@ -17,13 +144,6 @@
   font-weight: bold;
 }
 
-.title {
-  margin-bottom: 4rem;
-  text-transform: uppercase;
-  font-size: 4rem;
-  letter-spacing: 1px;
-  font-weight: bold;
-}
 
 .video-list {
   display: grid;
