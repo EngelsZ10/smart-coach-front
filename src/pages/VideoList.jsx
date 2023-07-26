@@ -84,7 +84,7 @@ function VideoList() {
           <img src="/Logos/logo texto1.png" alt="Logo texto 1" className="Logo"/>
         </figure>
       </header>
-      <div className="video-list" onDrop={handleDrop} onDragOver={(e) => e.preventDefault()}>
+      <div className="video-list">
         {videos.map(video => (
           <div className="video" key={video.id}>
             <img className="video__thumbnail" src={video.thumbnailUrl} alt={video.name} />
@@ -92,6 +92,9 @@ function VideoList() {
           </div>
         ))}
       </div>
+      <div className="drag-drop" onDrop={handleDrop} onDragOver={(e) => e.preventDefault()}>
+          Arrastra un video a esta zona para añadirlo a la lista.
+      </div>  
     </div>
   );
 }
