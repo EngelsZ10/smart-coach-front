@@ -12,6 +12,10 @@
   border: 2px solid black;
 }
 
+.view--yellow .drag-drop {
+  border: 4px dashed black;
+}
+
 .view--black {
   background-color: rgb(17, 17, 17);
 }
@@ -29,6 +33,11 @@
   color: whitesmoke;
 }
 
+.view--black .drag-drop {
+  border: 4px dashed #ffcc04;
+  color: whitesmoke;
+}
+
 .view--white .header__title, .view--white .video__name {
   /* color: #f01c24; */
   color: #1e2177;
@@ -36,6 +45,11 @@
 
 .view--white .header__button {
   border: 2px solid #1e2177;
+  color: #1e2177;
+}
+
+.view--white .drag-drop {
+  border: 4px dashed #1e2177;
   color: #1e2177;
 }
 
@@ -50,6 +64,11 @@
 
 .view--red .video__name {
   color: #ffcc04;
+}
+
+.view--red .header__button {
+  border: 2px solid whitesmoke;
+  color: whitesmoke;
 }
 
 .view--red .header__button {
@@ -156,7 +175,6 @@
   justify-content: center;
   align-items: center;
   font-size: 1.6rem;
-  border: 4px dashed black;
   height: 200px;
   cursor: pointer;
 }
