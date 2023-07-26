@@ -1,3 +1,7 @@
+@font-face {
+    font-family: 'CARBON';
+    src: url('../../public/Fonts/carbon bl.otf') format('truetype');
+  }
 
 body{
     background-color: #00ADEF;
@@ -8,9 +12,10 @@ body{
 .backbutton{
     margin-top: 2%;
     margin-left: 2%;
-    border: 3px solid #ffcb04;
+    border: 3px solid white;
     background-color: #ffcb04;
     color: white;
+   
     font-size: 15px;
     font-weight: bold;
     border-radius: 10px;
@@ -19,17 +24,26 @@ body{
 }
 
 .title{
-    margin-top: 5%;
+    margin-top: 7%;
     margin-left: 7%;
     color: white;
     font-size: 55px;
     font-weight: bold;
+    font-family: 'CARBON';
 }
 
-.imgright{
+.imgright1{
+    float: right;
+    margin-right: 1%;
+    margin-top: 5%;
+    height: 80px;
+}
+
+.imgright2{
     float: right;
     margin-right: 5%;
     margin-top: 5%;
+    height: 80px;
 }
 
 .pdfview{
@@ -68,12 +82,13 @@ body{
     font-weight: bold;
     color: white;
     margin-top: .2%;
+    font-family: 'CARBON';
 }
 
 .pdfcase-container {
     display: flex;
     justify-content: center;
-    margin-top: 5%;
+    margin-top: 7%;
     margin-left: 15%;
     margin-right: 15%;
   }

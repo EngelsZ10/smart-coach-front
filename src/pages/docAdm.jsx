@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Group, Text, useMantineTheme, rem } from '@mantine/core';
+import { Group, Text, useMantineTheme} from '@mantine/core';
 import { IconUpload, IconFileTypePdf, IconX } from '@tabler/icons-react';
 import { Dropzone, DropzoneProps, PDF_MIME_TYPE } from '@mantine/dropzone';
 
@@ -22,7 +22,8 @@ export function DocCoach(props: Partial<DropzoneProps>) {
           <Link to="/">
             <button className="backbutton">Volver al Menú</button>
           </Link>
-          <img src="SteelersLogoWithName.png" alt="Mantine logo" className="imgright"/>
+          <img src="logo texto1.png" alt="Mantine logo" className="imgright2"/>
+          <img src="Logo circular 2.png" alt="Mantine logo" className="imgright1"/>
           <h1 className="title">Documentos Administración</h1>
           <div className="pdfcase-container">
             <div className="pdfcase">
@@ -101,7 +102,7 @@ export function DocCoach(props: Partial<DropzoneProps>) {
 
         <div>
           <Text size="xl" inline>
-            Inserta el reglamento
+            Inserta el formato
           </Text>
         </div>
       </Group>
