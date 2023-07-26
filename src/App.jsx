@@ -12,7 +12,7 @@ export default function App() {
           <Routes>
             <Route path="/" element={<NavScreen/>} />
 
-            <Route path="/video" element={<VideoList/>}/>
+            <Route path="/videos" element={<VideoList/>}/>
 
             <Route path="scout">
               <Route index element={<CategoryView viewData={navigation.scout}/>}/>

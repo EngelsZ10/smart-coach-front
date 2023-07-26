@@ -198,42 +198,42 @@
       {
         "category": "linea ofensiva",
         "image": "/Logos/drills.png",
-        "target": "/video?categoria=drills&tipo=linea-ofensiva"
+        "target": "/videos?categoria=drills&tipo=linea-ofensiva"
       },
       {
         "category": "corredores",
         "image": "/Logos/drills.png",
-        "target": "/video?categoria=drills&tipo=corredores"
+        "target": "/videos?categoria=drills&tipo=corredores"
       },
       {
         "category": "qb",
         "image": "/Logos/drills.png",
-        "target": "/video?categoria=drills&tipo=qb"
+        "target": "/videos?categoria=drills&tipo=qb"
       },
       {
         "category": "receptores y alas c.",
         "image": "/Logos/drills.png",
-        "target": "/video?categoria=drills&tipo=receptores-y-alas-c"
+        "target": "/videos?categoria=drills&tipo=receptores-y-alas-c"
       },
       {
         "category": "linea de defensiva",
         "image": "/Logos/drills.png",
-        "target": "/video?categoria=drills&tipo=linea-de-defensiva"
+        "target": "/videos?categoria=drills&tipo=linea-de-defensiva"
       },
       {
         "category": "linebackers",
         "image": "/Logos/drills.png",
-        "target": "/video?categoria=drills&tipo=linebackers"
+        "target": "/videos?categoria=drills&tipo=linebackers"
       },
       {
         "category": "perimetro",
         "image": "/Logos/drills.png",
-        "target": "/video?categoria=drills&tipo=perimetro"
+        "target": "/videos?categoria=drills&tipo=perimetro"
       },
       {
         "category": "pateadores",
         "image": "/Logos/drills.png",
-        "target": "/video?categoria=drills&tipo=pateadores"
+        "target": "/videos?categoria=drills&tipo=pateadores"
       }
     ]
   },
