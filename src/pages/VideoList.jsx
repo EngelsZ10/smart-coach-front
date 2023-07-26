@@ -1,5 +1,8 @@
 import { useEffect, useState } from "react";
 import { useNavigate, useSearchParams } from "react-router-dom";
+import { useDisclosure } from "@mantine/hooks";
+import { Center, Group, Button } from "@mantine/core";
+import Demo from "../Components/uploadPage";
 
 import './VideoList.css';
 
@@ -14,6 +17,23 @@ function VideoList() {
   const navigate = useNavigate();
 
   const theme = getTheme();
+
+  function Upload() {
+    const [opened, { toggle, close }] = useDisclosure(false);
+    return (
+      <>
+        <div className="App">
+          <Center maw={400} h={100} mx="auto">
+            <Group position="center">
+              <Button onClick={toggle}>Toggle dialog</Button>
+            </Group>
+          </Center>
+        </div>
+
+        <Demo open={opened} close={close}></Demo>
+      </>
+    );
+  }
 
   function getTheme() {
     if(equipo) {
@@ -78,6 +98,7 @@ function VideoList() {
             <i className="fa fa-solid fa-arrow-left"></i>
             Volver
           </button>
+          <Upload></Upload>
         </div>
         <figure className="header__logo">
           <img src="/Logos/Logo circular1.png" alt="Logo Circular 1" className="Logo"/>  
