@@ -3,10 +3,6 @@ import { Link, useNavigate } from 'react-router-dom'; // Import useNavigate here
 import Validation from "./LoginValidation";
 import axios from 'axios';
 
-
-
-
-
 function Login() {
     const [values, setValues] = useState({
         email: '',
