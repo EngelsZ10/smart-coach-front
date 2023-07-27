@@ -1,124 +1,92 @@
+/*importa el font*/
 @font-face {
     font-family: 'CarbonBlock';
     src: url('/public/fonts/CarbonBlock.ttf') format('truetype');
-  }
-
-.navButton{
-    height: 8rem;
-    cursor: pointer;
-    border: none;
-    background-color: transparent;
 }
 
+/*background lo hace la foto*/
+.background-container {
+    background-image: url('/public/background/AMARILLO DE FONDO.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+  }
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/*Quita decoraciones a los links de los botones*/
 .Link {
     color: inherit;
     text-decoration: none;
+}
+
+/*Estilo de los titulos*/
+.Title{
+    font-family: 'CarbonBlock';
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 7vw;
+}
+.Title2{
+    font-family: 'CarbonBlock';
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 2.9vw;
+    margin-bottom: 2vw;
+}
+
+/*Hace que los logos y botones estén de los dos lados*/
+.navMenu {
+    display: flex; 
+    align-items: center;
+    justify-content: center;
   }
 
-.navOptions{
-    margin-left: 25%;
-    margin-right: 25%;
-}
-
-.imgcenter{
-    height: 200px;
-    margin: 0 10px;
-}
-
-.imgcenter-div{
+.navLogos {
     display: flex;
-    justify-content: center;
+    flex-direction: column; 
     align-items: center;
-    margin-top: 1%;
-    margin-bottom: 1%;
-}
+    margin-right: 7vw;
+    margin-left: 5vw;
+  }
 
-.center{
-    text-align: center;
-    font-family: 'CarbonBlock';
-    font-size: 4rem;
+.navLogo{
+    height: 30vw;
+    margin-bottom: 2vw;
 }
-
-.navText{
-    margin-left: 3rem;
-    font-size: 3rem;
-    vertical-align: middle;
-    font-family: 'CarbonBlock';
-}
-.navText:hover{
-    text-decoration: underline;
-}
-.navText:active{
-    color: rgb(92, 92, 92);
+.navLogo2{
+    height: 10.5vw;
 }
 
 .navOption{
-  display: 'flex';
-  align-items: 'center';
-  vertical-align: middle;
-  margin-top: .75%;
-  margin-bottom: .75%;
+    margin-bottom: .5vw;
+    transform: scale(1);
+    transition: .5s;
+    margin-left: 5vw;
 }
 .navOption:hover{
-    background-color: whitesmoke;
+    transform: scale(1.1);
+    transition: .5s;
 }
-.navOption:active{
-    background-color: rgb(236, 236, 236);
+
+.navButton{
+    background-color: transparent;
+    border: none;
+}
+
+.navText{
+    font-family: 'CarbonBlock';
+    font-size: 2.5vw;
+    margin-left: 2vw;
+    vertical-align: middle;
 }
 
 .buttonImage{
-    height: 100%;
-    width: auto;
-}
-
-@media screen and (min-width: 1300px){
-    .navOptions{
-        margin-left: 5%;
-        margin-right: 5%;
-    }
-
-}
-@media screen and (min-width: 1600px){
-    .navOptions{
-        margin-left: 10%;
-        margin-right: 21%;
-    }
-    .navOption{
-        margin-top: 1.5%;
-        margin-bottom: 1.5%;
-    }
-}
-@media screen and (min-width: 1900px){
-
-    .navOptions{
-        margin-left: 13%;
-        margin-right: 20%;
-    }
-    .navOption{
-        margin-top: 2%;
-        margin-bottom: 2%;
-    }
-    .navText{
-        font-size: 3.5rem;
-    }
-    .center{
-        font-size: 5rem;
-    }
-}
-@media screen and (min-width: 2100px){
-
-    .navOptions{
-        margin-left: 20%;
-        margin-right: 20%;
-    }
-    .navOption{
-        margin-top: 2%;
-        margin-bottom: 2%;
-    }
-    .navText{
-        font-size: 3.5rem;
-    }
-    .center{
-        font-size: 5rem;
-    }
+    height: 8rem;
 }

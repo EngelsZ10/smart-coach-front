@@ -197,42 +197,42 @@
     "items": [
       {
         "category": "linea ofensiva",
-        "image": "/Logos/drills.png",
+        "image": "/Logos/drills/drill de posicion linea ofensiva.png",
         "target": "/videos?categoria=drills&tipo=linea-ofensiva"
       },
       {
         "category": "corredores",
-        "image": "/Logos/drills.png",
+        "image": "/Logos/drills/DRILLS DE POSICION CORREDORES.png",
         "target": "/videos?categoria=drills&tipo=corredores"
       },
       {
         "category": "qb",
-        "image": "/Logos/drills.png",
+        "image": "/Logos/drills/DRILLS DE POSICION Q BACK.png",
         "target": "/videos?categoria=drills&tipo=qb"
       },
       {
         "category": "receptores y alas c.",
-        "image": "/Logos/drills.png",
+        "image": "/Logos/drills/DRILLS DE POSICION RECEPTORES Y ALAS C..png",
         "target": "/videos?categoria=drills&tipo=receptores-y-alas-c"
       },
       {
-        "category": "linea de defensiva",
-        "image": "/Logos/drills.png",
+        "category": "linea defensiva",
+        "image": "/Logos/drills/DRILLS DE POSICION LINEA DEFENSIVA.png",
         "target": "/videos?categoria=drills&tipo=linea-de-defensiva"
       },
       {
         "category": "linebackers",
-        "image": "/Logos/drills.png",
+        "image": "/Logos/drills/DRILLS DE POSICION LINEBACKERS.png",
         "target": "/videos?categoria=drills&tipo=linebackers"
       },
       {
         "category": "perimetro",
-        "image": "/Logos/drills.png",
+        "image": "/Logos/drills/DRILLS DE POSICION PERIMETRO.png",
         "target": "/videos?categoria=drills&tipo=perimetro"
       },
       {
         "category": "pateadores",
-        "image": "/Logos/drills.png",
+        "image": "/Logos/drills/DRILLS DE POSICION PATEADORES.png",
         "target": "/videos?categoria=drills&tipo=pateadores"
       }
     ]
@@ -241,53 +241,27 @@
   "acondicionamiento": {
     "title": "acondicionamiento físico",
     "theme": "red",
-    "columns": 2,
+    "columns": 4,
     "items": [
       {
-        "category": "ligas",
-        "image": "/Logos/acondicionamiento fisico.png",
-        "target": "ligas"
+        "category": "flag",
+        "image": "/Logos/acond/ACONDICIONAMIENTO FISICO FLAG.png",
+        "target": "flag"
       },
       {
-        "category": "gym",
-        "image": "/Logos/acondicionamiento fisico.png",
-        "target": "gym"
-      }
-    ]
-  },
-  
-  "ligas": {
-    "title": "ligas",
-    "theme": "red",
-    "columns": 2,
-    "items": [
-      {
-        "category": "linea ofensiva",
-        "image": "/Logos/acondicionamiento fisico.png",
-        "target": "linea-ofensiva/videos"
+        "category": "infantiles chicas",
+        "image": "/Logos/acond/ACONDICIONAMIENTO FISICO INFANTILES CHICAS.png",
+        "target": "infantiles chicas"
       },
       {
-        "category": "corredores",
-        "image": "/Logos/acondicionamiento fisico.png",
-        "target": "corredores/videos"
-      }
-    ]
-  },
-
-  "gym": {
-    "title": "gym",
-    "theme": "red",
-    "columns": 2,
-    "items": [
-      {
-        "category": "linea de defensiva",
-        "image": "/Logos/acondicionamiento fisico.png",
-        "target": "linea-de-defensiva/videos"
+        "category": "infantiles grandes",
+        "image": "/Logos/acond/ACONDICIONAMIENTO FISICO INFANTILES GRANDES.png",
+        "target": "infantiles grandes"
       },
       {
-        "category": "linebackers",
-        "image": "/Logos/acondicionamiento fisico.png",
-        "target": "linebackers/videos"
+        "category": "juvenil",
+        "image": "/Logos/acond/ACONDICIONAMIENTO FISICO JUVENIL.png",
+        "target": "juvenil"
       }
     ]
   },
@@ -321,22 +295,22 @@
     "items": [
       {
         "category": "reglamentos coaches",
-        "image": "/Logos/documentos Coaches.png",
+        "image": "/Logos/docCoaches/DOCUMENTOS COACHES REGLAMENTO COACHES.png",
         "target": "reglamentos-coaches/documentos"
       },
       {
         "category": "formatos coaches",
-        "image": "/Logos/documentos Coaches.png",
+        "image": "/Logos/docCoaches/DOCUMENTOS COACHES FORMATOS COACHES.png",
         "target": "formatos-coaches/documentos"
       },
       {
         "category": "reglamento onefa",
-        "image": "/Logos/documentos Coaches.png",
+        "image": "/Logos/docCoaches/DOCUMENTOS COACHES REGLAMENTOS ONEFA.png",
         "target": "reglamento-onefa/documentos"
       },
       {
         "category": "reglamento ofamo",
-        "image": "/Logos/documentos Coaches.png",
+        "image": "/Logos/docCoaches/DOCUMENTOS COACHES REGLAMENTOS OFAMO.png",
         "target": "reglamento-ofamo/documentos"
       }
     ]
@@ -349,22 +323,22 @@
     "items": [
       {
         "category": "reglamentos padres",
-        "image": "/Logos/Documentos Administracion.png",
+        "image": "/Logos/docAdmin/DOCUMENTOS ADMINISTRACION REGLAMENTOS PADRES.png",
         "target": "reglamentos-padres/documentos"
       },
       {
         "category": "formatos inscripcion",
-        "image": "/Logos/Documentos Administracion.png",
+        "image": "/Logos/docAdmin/DOCUMENTOS ADMINISTRACION FORMATOS DE INSCRIPCION.png",
         "target": "formatos-inscripcion/documentos"
       },
       {
         "category": "reglamento managers",
-        "image": "/Logos/Documentos Administracion.png",
+        "image": "/Logos/docAdmin/DOCUMENTOS ADMINISTRACION REGLAMENTO MANAGERS.png",
         "target": "reglamento-managers/documentos"
       },
       {
         "category": "reglamento jugadores",
-        "image": "/Logos/Documentos Administracion.png",
+        "image": "/Logos/docAdmin/DOCUMENTOS ADMINISTRACION REGLAMENTO DE JUGADORES.png",
         "target": "reglamento-jugadores/documentos"
       }
     ]
