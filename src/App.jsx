@@ -1,7 +1,7 @@
 import { Routes, Route, BrowserRouter } from 'react-router-dom';
 import NavScreen from './pages/navigationScreen';
 import './App.css';
-
+import Login from './Login';
 import CategoryView from './pages/CategoryView';
 import navigation from './data/navigation.json';
 import VideoList from './pages/VideoList';
@@ -10,7 +10,8 @@ export default function App() {
   return (
         <BrowserRouter>
           <Routes>
-            <Route path="/" element={<NavScreen/>} />
+            <Route path="/" element={<Login />} />
+            <Route path="/home" element={<NavScreen/>} />
 
             <Route path="/videos" element={<VideoList/>}/>
 

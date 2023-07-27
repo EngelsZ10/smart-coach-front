@@ -1,5 +1,4 @@
-import { Group, Button, TextInput, Text, Modal } from "@mantine/core";
-import { Dropzone, MIME_TYPES } from "@mantine/dropzone";
+import { Modal } from "@mantine/core";
 import { DropzoneButton } from "./Dropdown";
 
 export default function Demo({ open, close }) {

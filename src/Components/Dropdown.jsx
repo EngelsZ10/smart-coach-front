@@ -4,9 +4,7 @@ import {
   Group,
   Button,
   createStyles,
-  rem,
-  Flex,
-  Container,
+  rem
 } from "@mantine/core";
 import { Dropzone, MIME_TYPES } from "@mantine/dropzone";
 import uploadIcon from "../Assets/upload-minimalistic-svgrepo-com.svg";
