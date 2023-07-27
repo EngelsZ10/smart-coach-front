@@ -9,7 +9,7 @@ import {
     Space,
   } from "@mantine/core";
   import { useHover } from "@mantine/hooks";
-  import trashw from "./../../assets/trash_white.svg";
+  import trashw from "./../../Assets/trash_white.svg";
   
   function Cuenta() {
     const { hovered, ref } = useHover();

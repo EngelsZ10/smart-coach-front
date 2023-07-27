@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { Container, SimpleGrid, Button, Modal } from "@mantine/core";
 import Cuenta from "./Card";
-import addw from "./../../assets/add_yellow.svg";
+import addw from "./../../Assets/add_yellow.svg";
 import { useHover } from "@mantine/hooks";
 import { useDisclosure } from "@mantine/hooks";
 import addFTP from "./addFTP";
@@ -15,7 +15,7 @@ function Admin() {
         <Button>aads</Button>
       </Modal>
       <Container size="90rem" p="xl" id="AdminBG" style={{ color: "#2e3092" }}>
-        <Link to="/">
+        <Link to="/home">
           <button>BACK</button>
         </Link>
         <h1>Documentación Administrativa</h1>
