@@ -17,6 +17,13 @@ function NavScreen(){
 
         <div className='navOptions'>
 
+            <Link to="/admin" className='Link'>
+              <div style={{ display: 'flex', justifyContent: 'center'}} className='navOption' >
+                <button className="navButton"><img src="/Logos/Logo circular 2.png" alt="VideoScout" className='buttonImage'/></button>
+                <span className="navText navText2">ADMIN</span>
+              </div>
+            </Link>
+
             <Link to="/scout" className='Link'>
               <div className='navOption'>
                 <button className="navButton"><img src="/Logos/VideoScout/VIDEO SCOUT.png" alt="VideoScout" className='buttonImage'/></button>
