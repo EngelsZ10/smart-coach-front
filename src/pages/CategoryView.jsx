@@ -25,7 +25,7 @@ function CategoryView({ viewData }) {
           </button>
         </div>
         <figure className="header__logo">
-          <img src="/Logos/Logo circular1.png" alt="Logo Circular 1" className="Logo"/>  
+          <img src="/Logos/Logo circular 2.png" alt="Logo Circular 1" className="Logo"/>  
           <img src="/Logos/logo texto1.png" alt="Logo texto 1" className="Logo"/>
         </figure>
       </header>
