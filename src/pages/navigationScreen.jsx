@@ -24,7 +24,7 @@ function NavScreen(){
 
               <Link to="/admin" className='Link'>
                 <div className='navOption' >
-                  <button className="navButton"><img src="/Logos/Logo circular1.png" alt="VideoScout" className='buttonImage'/></button>
+                  <button className="navButton"><img src="/Logos/Logo circular 2.png" alt="VideoScout" className='buttonImage'/></button>
                   <span className="navText">ADMIN</span>
                 </div>
               </Link>
@@ -53,7 +53,7 @@ function NavScreen(){
               <Link to="/acondicionamiento" className='Link'>
                 <div className='navOption'>
                   <button className="navButton"><img src="/Logos/acondicionamiento fisico.png" alt="acondicionamientoFisico" className='buttonImage'/></button>
-                  <span className="navText">ACONDICIONAMIENTO FISICO</span>
+                  <span className="navText">ACONDICIONAMIENTO FÍSICO</span>
                 </div>
               </Link>
 
@@ -74,7 +74,7 @@ function NavScreen(){
               <Link to="/administracion" className='Link'>
                 <div className='navOption'>
                   <button className="navButton"><img src="/Logos/Documentos Administracion.png" alt="documentosAdministracion" className='buttonImage'/></button>
-                  <span className="navText">DOCUMENTOS ADMINISTRACION</span>
+                  <span className="navText">DOCUMENTOS ADMINISTRACIÓN</span>
                 </div>
               </Link>
 

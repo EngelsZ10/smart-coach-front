@@ -6,7 +6,7 @@
 
 /*background lo hace la foto*/
 .background-container {
-    background-image: url('/public/AMARILLO DE FONDO.png');
+    background-image: url('/public/background/AMARILLO DE FONDO.png');
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
@@ -53,6 +53,7 @@ img {
     flex-direction: column; 
     align-items: center;
     margin-right: 7vw;
+    margin-left: 5vw;
   }
 
 .navLogo{
@@ -60,11 +61,18 @@ img {
     margin-bottom: 2vw;
 }
 .navLogo2{
-    height: 12vw;
+    height: 10.5vw;
 }
 
 .navOption{
     margin-bottom: .5vw;
+    transform: scale(1);
+    transition: .5s;
+    margin-left: 5vw;
+}
+.navOption:hover{
+    transform: scale(1.1);
+    transition: .5s;
 }
 
 .navButton{
@@ -74,8 +82,9 @@ img {
 
 .navText{
     font-family: 'CarbonBlock';
-    font-size: 2vw;
-    margin-left: 1vw;
+    font-size: 2.5vw;
+    margin-left: 2vw;
+    vertical-align: middle;
 }
 
 .buttonImage{
