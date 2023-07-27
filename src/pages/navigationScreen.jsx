@@ -66,14 +66,14 @@ function NavScreen(){
 
               <Link to="/coaches" className='Link'>
                 <div className='navOption'>
-                  <button className="navButton"><img src="/Logos/documentos Coaches.png" alt="documentosCoaches" className='buttonImage'/></button>
+                  <button className="navButton"><img src="/Logos/docCoaches/documentos Coaches.png" alt="documentosCoaches" className='buttonImage'/></button>
                   <span className="navText">DOCUMENTOS COACHES</span>
                 </div>
               </Link>
 
               <Link to="/administracion" className='Link'>
                 <div className='navOption'>
-                  <button className="navButton"><img src="/Logos/Documentos Administracion.png" alt="documentosAdministracion" className='buttonImage'/></button>
+                  <button className="navButton"><img src="/Logos/docAdmin/Documentos Administracion.png" alt="documentosAdministracion" className='buttonImage'/></button>
                   <span className="navText">DOCUMENTOS ADMINISTRACIÓN</span>
                 </div>
               </Link>

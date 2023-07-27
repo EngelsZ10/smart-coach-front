@@ -8,7 +8,7 @@ body{
 }
 
 .view {
-  padding: 0 15%;
+  padding: 0 5vw;
   min-height: 100vh;
 }
 
@@ -130,7 +130,6 @@ body{
   height: 10rem;
 }
 
-
 .header__button {
   cursor: pointer;
   background: none;
@@ -185,8 +184,9 @@ body{
 }
 
 .item__category {
-  font-size: 3rem;
+  font-size: 2.44vw;
   text-transform: uppercase;
   margin: 1rem 0;
   font-weight: bold;
+  font-family: 'CarbonBlock';
 }

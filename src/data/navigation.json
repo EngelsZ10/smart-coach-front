@@ -216,7 +216,7 @@
         "target": "/videos?categoria=drills&tipo=receptores-y-alas-c"
       },
       {
-        "category": "linea de defensiva",
+        "category": "linea defensiva",
         "image": "/Logos/drills/DRILLS DE POSICION LINEA DEFENSIVA.png",
         "target": "/videos?categoria=drills&tipo=linea-de-defensiva"
       },
@@ -265,42 +265,6 @@
       }
     ]
   },
-  
-  "ligas": {
-    "title": "ligas",
-    "theme": "red",
-    "columns": 2,
-    "items": [
-      {
-        "category": "linea ofensiva",
-        "image": "/Logos/acondicionamiento fisico.png",
-        "target": "linea-ofensiva/videos"
-      },
-      {
-        "category": "corredores",
-        "image": "/Logos/acondicionamiento fisico.png",
-        "target": "corredores/videos"
-      }
-    ]
-  },
-
-  "gym": {
-    "title": "gym",
-    "theme": "red",
-    "columns": 2,
-    "items": [
-      {
-        "category": "linea de defensiva",
-        "image": "/Logos/acondicionamiento fisico.png",
-        "target": "linea-de-defensiva/videos"
-      },
-      {
-        "category": "linebackers",
-        "image": "/Logos/acondicionamiento fisico.png",
-        "target": "linebackers/videos"
-      }
-    ]
-  },
 
   "playbook": {
     "title": "playbook",
@@ -331,22 +295,22 @@
     "items": [
       {
         "category": "reglamentos coaches",
-        "image": "/Logos/documentos Coaches.png",
+        "image": "/Logos/docCoaches/DOCUMENTOS COACHES REGLAMENTO COACHES.png",
         "target": "reglamentos-coaches/documentos"
       },
       {
         "category": "formatos coaches",
-        "image": "/Logos/documentos Coaches.png",
+        "image": "/Logos/docCoaches/DOCUMENTOS COACHES FORMATOS COACHES.png",
         "target": "formatos-coaches/documentos"
       },
       {
         "category": "reglamento onefa",
-        "image": "/Logos/documentos Coaches.png",
+        "image": "/Logos/docCoaches/DOCUMENTOS COACHES REGLAMENTOS ONEFA.png",
         "target": "reglamento-onefa/documentos"
       },
       {
         "category": "reglamento ofamo",
-        "image": "/Logos/documentos Coaches.png",
+        "image": "/Logos/docCoaches/DOCUMENTOS COACHES REGLAMENTOS OFAMO.png",
         "target": "reglamento-ofamo/documentos"
       }
     ]
@@ -359,22 +323,22 @@
     "items": [
       {
         "category": "reglamentos padres",
-        "image": "/Logos/Documentos Administracion.png",
+        "image": "/Logos/docAdmin/DOCUMENTOS ADMINISTRACION REGLAMENTOS PADRES.png",
         "target": "reglamentos-padres/documentos"
       },
       {
         "category": "formatos inscripcion",
-        "image": "/Logos/Documentos Administracion.png",
+        "image": "/Logos/docAdmin/DOCUMENTOS ADMINISTRACION FORMATOS DE INSCRIPCION.png",
         "target": "formatos-inscripcion/documentos"
       },
       {
         "category": "reglamento managers",
-        "image": "/Logos/Documentos Administracion.png",
+        "image": "/Logos/docAdmin/DOCUMENTOS ADMINISTRACION REGLAMENTO MANAGERS.png",
         "target": "reglamento-managers/documentos"
       },
       {
         "category": "reglamento jugadores",
-        "image": "/Logos/Documentos Administracion.png",
+        "image": "/Logos/docAdmin/DOCUMENTOS ADMINISTRACION REGLAMENTO DE JUGADORES.png",
         "target": "reglamento-jugadores/documentos"
       }
     ]
