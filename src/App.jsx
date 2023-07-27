@@ -5,6 +5,7 @@ import Login from './Login';
 import CategoryView from './pages/CategoryView';
 import navigation from './data/navigation.json';
 import VideoList from './pages/VideoList';
+import Admin from "./pages/PanelAdmin/admin";
 
 export default function App() {
   return (
@@ -12,6 +13,7 @@ export default function App() {
           <Routes>
             <Route path="/" element={<Login />} />
             <Route path="/home" element={<NavScreen/>} />
+            <Route path="/admin" element={<Admin/>} />
 
             <Route path="/videos" element={<VideoList/>}/>
 
