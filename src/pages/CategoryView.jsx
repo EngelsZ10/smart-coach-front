@@ -16,17 +16,17 @@ function CategoryView({ viewData }) {
   return (
     console.log(stelscout),
     <div className={`view view--${theme}`}>
-      <header className="view__header">
+      <header className="view_header">
         <div className="container">
-          <h3 className="header__title">{title}</h3>
-          <button className="header__button" onClick={() => navigate(-1)}>
+          <h3 className="header_title">{title}</h3>
+          <button className="header_button" onClick={() => navigate(-1)}>
             <i className="fa fa-solid fa-arrow-left"></i>
             Volver a {buttonContent}
           </button>
         </div>
-        <figure className="header__logo">
-          <img src="/Logos/Logo circular1.png" alt="Logo Circular 1" className="Logo"/>  
-          <img src="/Logos/logo texto1.png" alt="Logo texto 1" className="Logo"/>
+        <figure className="header_logo">
+          <img src="/Logos/Logo circular1.png" alt="Logo Circular 1"/>
+          <img src="/Logos/logo texto1.png" alt="Logo texto 1"/>
         </figure>
       </header>
       <section className={`subcategory-list cols--${columns}`}>
@@ -36,14 +36,14 @@ function CategoryView({ viewData }) {
             key={item.category}
             onClick={() => { if(stelscout === "steelers"){ navigate(item.target2)} else {navigate(item.target)} }}  
           >
-            <figure className="item__image">
+            <figure className="item_image">
               {stelscout === "steelers" ? (
                 <img src={item.image2} alt={`category-${item.category}`} />
               ) : (
                 <img src={item.image} alt={`category-${item.category}`} />
               )}
             </figure>
-            <div className="item__category">{item.category}</div>
+            <div className="item_category">{item.category}</div>
           </div>
         ))}
       </section>
