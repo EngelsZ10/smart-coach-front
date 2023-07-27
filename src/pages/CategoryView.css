@@ -14,15 +14,24 @@ body{
 
 /* Customize themes */
 .view--yellow {
-  background-color: #ffcc04;
+  background-image: url('/public/background/AMARILLO DE FONDO.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
 }
 
 .view--yellow .header_button {
   border: 2px solid black;
 }
 
+
 .view--black {
-  background-color: rgb(17, 17, 17);
+  background-image: url('/public/background/NEGRO DE FONDO.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
 }
 
 .view--black .header_title{
@@ -38,6 +47,15 @@ body{
   color: whitesmoke;
 }
 
+
+.view--white{
+  background-image: url('/public/background/BLANCO DE FONDO.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
 .view--white .header_title, .view--white .item_category{
   /* color: #f01c24; */
   color: #1e2177;
@@ -50,7 +68,11 @@ body{
 
 
 .view--red {
-  background-color: #f01c24;
+  background-image: url('/public/background/FONDO ROJO.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
 }
 
 .view--red .header_title{
@@ -68,7 +90,11 @@ body{
 
 
 .view--blue {
-  background-color: #1e2177;
+  background-image: url('/public/background/FONDO AZUL MARINO.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
 }
 
 .view--blue .header_title{
@@ -86,7 +112,11 @@ body{
 
 
 .view--light-blue {
-  background-color: #08acec;
+  background-image: url('/public/background/FONDO AZUL CLARO.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
 }
 
 .view--light-blue .header_title{
@@ -98,6 +128,28 @@ body{
 }
 
 .view--light-blue .header_button {
+  border: 2px solid #ffcc04;
+  color: whitesmoke;
+}
+
+
+.view--light-blue2 {
+  background-image: url('/public/background/FONDO AZUL CLARO 2.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+.view--light-blue2 .header_title{
+  color: #ffcc04;
+}
+
+.view--light-blue2 .item_category {
+  color: whitesmoke;
+}
+
+.view--light-blue2 .header_button {
   border: 2px solid #ffcc04;
   color: whitesmoke;
 }
@@ -177,6 +229,12 @@ body{
 
 .nav-item {
   cursor: pointer;
+  transform: scale(1);
+  transition: .5s;
+}
+.nav-item:hover {
+  transform: scale(1.1);
+  transition: .5s;
 }
 
 .item_category {
