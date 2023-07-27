@@ -45,21 +45,21 @@ function NavScreen(){
 
               <Link to="/drills" className='Link'>
                 <div className='navOption'>
-                  <button className="navButton"><img src="/Logos/drills.png" alt="drills" className='buttonImage'/></button>
+                  <button className="navButton"><img src="/Logos/drills/drills.png" alt="drills" className='buttonImage'/></button>
                   <span className="navText">DRILLS</span>
                 </div>
               </Link>
 
               <Link to="/acondicionamiento" className='Link'>
                 <div className='navOption'>
-                  <button className="navButton"><img src="/Logos/acondicionamiento fisico.png" alt="acondicionamientoFisico" className='buttonImage'/></button>
+                  <button className="navButton"><img src="/Logos/acond/acondicionamiento fisico.png" alt="acondicionamientoFisico" className='buttonImage'/></button>
                   <span className="navText">ACONDICIONAMIENTO FÍSICO</span>
                 </div>
               </Link>
 
               <Link to="/playbook" className='Link'>
                 <div className='navOption'>
-                  <button className="navButton"><img src="/Logos/playbook.png" alt="playbook" className='buttonImage'/></button>
+                  <button className="navButton"><img src="/Logos/playbook/playbook.png" alt="playbook" className='buttonImage'/></button>
                   <span className="navText">PLAYBOOK</span>
                 </div>
               </Link>
