@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'CarbonBlock';
+  src: url('/public/fonts/CarbonBlock.ttf') format('truetype');
+}
+
 /* Customize Themes */
 .list-view {
   padding: 0 5vw;
@@ -30,10 +35,12 @@
 
 .drag-drop {
   margin-top: 3vw;
+  margin-bottom: 1vw;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 3vw;
-  height: 20vw;
+  font-size: 3.5vw;
+  font-family: 'CarbonBlock';
+  height: 15vw;
   cursor: pointer;
 }
