@@ -3,6 +3,7 @@ import { useNavigate, useSearchParams } from "react-router-dom";
 import { useDisclosure } from "@mantine/hooks";
 import { Center, Group, Button } from "@mantine/core";
 import Demo from "../Components/uploadPage";
+import MostrarVideo from "./mostrarVideo";
 
 import './VideoList.css';
 
@@ -98,13 +99,13 @@ function VideoList() {
             <i className="fa fa-solid fa-arrow-left"></i>
             Volver
           </button>
-          <Upload></Upload>
         </div>
         <figure className="header_logo">
           <img src="/Logos/Logo circular1.png" alt="Logo Circular 1" className="Logo"/>  
           <img src="/Logos/logo texto1.png" alt="Logo texto 1" className="Logo"/>
         </figure>
       </header>
+            <Upload></Upload>
       <div className="video-list">
         {videos.map(video => (
           <div className="video" key={video.id}>
@@ -116,6 +117,7 @@ function VideoList() {
       <div className="drag-drop" onDrop={handleDrop} onDragOver={(e) => e.preventDefault()}>
           Arrastra un video a esta zona para añadirlo a la lista.
       </div>  
+        <MostrarVideo></MostrarVideo>
     </div>
   );
 }
