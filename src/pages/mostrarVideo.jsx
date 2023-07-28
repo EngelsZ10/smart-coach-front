@@ -35,17 +35,17 @@ function MostrarVideo() {
     if (e.buttons !== 1) return;
     const ctx = canvasCTX;
     ctx.beginPath();
-    ctx.moveTo(mouse.x, mouse.y - r.y);
+    ctx.moveTo(mouse.x - r.x, mouse.y - r.y);
     setMouse({
       x: e.clientX,
       y: e.clientY,
     });
     if (dibujar === 1){
-      ctx.lineTo(e.clientX, e.clientY - r.y);
+      ctx.lineTo(e.clientX - r.x, e.clientY - r.y);
       ctx.strokeStyle = color;
       ctx.lineWidth = 10;
     }else{
-      ctx.clearRect(e.clientX, e.clientY - r.y, 20, 20);
+      ctx.clearRect(e.clientX - r.x, e.clientY - r.y, 20, 20);
     }
     // Set the line cap to round
     ctx.lineCap = "round";
