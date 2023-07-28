@@ -91,16 +91,16 @@ function VideoList() {
 
   return (
     <div className={`list-view view--${theme}`}>
-      <header className="view__header">
+      <header className="view_header">
         <div className="container">
-          <h3 className="header__title">Videos</h3>
-          <button className="header__button" onClick={() => navigate(-1)}>
+          <h3 className="header_title">Videos</h3>
+          <button className="header_button" onClick={() => navigate(-1)}>
             <i className="fa fa-solid fa-arrow-left"></i>
             Volver
           </button>
           <Upload></Upload>
         </div>
-        <figure className="header__logo">
+        <figure className="header_logo">
           <img src="/Logos/Logo circular1.png" alt="Logo Circular 1" className="Logo"/>  
           <img src="/Logos/logo texto1.png" alt="Logo texto 1" className="Logo"/>
         </figure>
@@ -108,8 +108,8 @@ function VideoList() {
       <div className="video-list">
         {videos.map(video => (
           <div className="video" key={video.id}>
-            <img className="video__thumbnail" src={video.thumbnailUrl} alt={video.name} />
-            <div className="video__name">{video.name}</div>
+            <img className="video_thumbnail" src={video.thumbnailUrl} alt={video.name} />
+            <div className="item_category">{video.name}</div>
           </div>
         ))}
       </div>
