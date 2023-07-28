@@ -14,7 +14,6 @@ function CategoryView({ viewData }) {
   const stelscout = window.location.pathname.split("/").slice(-2)[0];
 
   return (
-    console.log(stelscout),
     <div className={`view view--${theme}`}>
       <header className="view_header">
         <div className="container">
