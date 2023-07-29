@@ -78,10 +78,12 @@ function NavScreen(){
                 </div>
               </Link>
 
-            <div className='navOption'>
-              <button className="navButton"><img src="/Logos/Generador de jugadas.png" alt="GeneradorJugadas" className='buttonImage'/></button>
-              <span className="navText">GENERADOR DE JUGADAS</span>
-            </div>
+            <Link to="/generador-jugadas" className="Link">
+              <div className='navOption'>
+                <button className="navButton"><img src="/Logos/Generador de jugadas.png" alt="GeneradorJugadas" className='buttonImage'/></button>
+                <span className="navText">GENERADOR DE JUGADAS</span>
+              </div>
+            </Link>
 
             </div>
 

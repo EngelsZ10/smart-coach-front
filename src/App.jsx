@@ -6,6 +6,7 @@ import CategoryView from './pages/CategoryView';
 import navigation from './data/navigation.json';
 import VideoList from './pages/VideoList';
 import Admin from "./pages/PanelAdmin/admin";
+import PlayGenerator from './pages/PlayGenerator';
 
 export default function App() {
   return (
@@ -16,6 +17,7 @@ export default function App() {
             <Route path="/admin" element={<Admin/>} />
 
             <Route path="/videos" element={<VideoList/>}/>
+            <Route path="/generador-jugadas" element={<PlayGenerator/>}/>
 
             <Route path="scout">
               <Route index element={<CategoryView viewData={navigation.scout}/>}/>
