@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom"; // Import useNavigate here
 import Validation from "./LoginValidation";
 import axios from "axios";
-import Cookies from "js-cookie";
 import "./Login.css";
 
 function Login() {
@@ -13,7 +12,7 @@ function Login() {
   });
   const navigate = useNavigate();
   const [selectedCategory, setSelectedCategory] = useState("");
-  const [categorias, setCategorias] = useState([
+  const [categorias] = useState([
     "Baby",
     "Falcons",
     "Flag",
@@ -57,7 +56,7 @@ function Login() {
           },
         })
         .then((res) => {
-          if (res.data.response == true) {
+          if (res.data.response === true) {
             localStorage.setItem("credenciales", {
               email: values.email,
               pass: values.password,

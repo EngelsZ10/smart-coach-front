@@ -1,11 +1,10 @@
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { MantineProvider, Text } from "@mantine/core";
 
 import "./navigationScreen.css";
 import { useEffect, useState } from "react";
 
 function NavScreen() {
-  const navigate = useNavigate();
   const [isadmin, setisadmin] = useState("");
 
   useEffect(() => {
