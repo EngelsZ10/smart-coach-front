@@ -1,6 +1,6 @@
 {
   "name": "smart-coach",
-  "homepage":"https://smartcoach.top/",
+  "homepage": "https://smartcoach.top/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
