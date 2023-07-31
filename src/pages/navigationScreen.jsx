@@ -159,7 +159,7 @@ function NavScreen() {
                     }}
                   />
                 </button>
-                <span className="navText">VIDEOS SCOUT</span>
+                <span className="navText">CERRAR SESIÓN</span>
               </div>
             </Link>
           </div>
