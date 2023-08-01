@@ -5,6 +5,7 @@ import Login from './Login';
 import CategoryView from './pages/CategoryView';
 import navigation from './data/navigation.json';
 import VideoList from './pages/VideoList';
+import DocumentViews from './pages/DocumentViews';
 import Admin from "./pages/PanelAdmin/admin";
 
 export default function App() {
@@ -46,11 +47,11 @@ export default function App() {
             </Route>
 
             <Route path="coaches">
-              <Route index element={<CategoryView viewData={navigation.coaches}/>}/>
+            <Route index element={<DocumentViews viewData={navigation.coaches}/>}/>
             </Route>
 
             <Route path="administracion">
-              <Route index element={<CategoryView viewData={navigation.administracion}/>}/>
+            <Route index element={<DocumentViews viewData={navigation.administracion}/>}/>
             </Route>
 
           </Routes>
