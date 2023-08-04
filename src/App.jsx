@@ -1,3 +1,4 @@
+
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 import React, { useEffect, useState } from "react";
 import NavScreen from "./pages/navigationScreen";
@@ -6,6 +7,7 @@ import Login from "./Login";
 import CategoryView from "./pages/CategoryView";
 import navigation from "./data/navigation.json";
 import VideoList from "./pages/VideoList";
+import DocumentViews from './pages/DocumentViews';r
 import Admin from "./pages/PanelAdmin/admin";
 import ProtectedRoute from "./pages/rerouting/protectedRoute";
 import ProtectedLogin from "./pages/rerouting/protectedlogin";
@@ -109,14 +111,14 @@ export default function App() {
           <Route path="coaches">
             <Route
               index
-              element={<CategoryView viewData={navigation.coaches} />}
+              element={<DocumentViews viewData={navigation.coaches} />}
             />
           </Route>
 
           <Route path="administracion">
             <Route
               index
-              element={<CategoryView viewData={navigation.administracion} />}
+              element={<DocumentViews viewData={navigation.administracion} />}
             />
           </Route>
         </Route>
