@@ -1,9 +1,9 @@
 import { useLocation, useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
-import { Group, Text, useMantineTheme } from "@mantine/core";
+import { Group, Text } from "@mantine/core";
 import "./CategoryView.css";
 // import { IconUpload, IconFileTypePdf, IconX } from "@tabler/icons-react";
-import { Dropzone, DropzoneProps, PDF_MIME_TYPE } from "@mantine/dropzone";
+import { Dropzone, PDF_MIME_TYPE } from "@mantine/dropzone";
 
 function CategoryView({ viewData }, props) {
   const navigate = useNavigate();
@@ -15,7 +15,7 @@ function CategoryView({ viewData }, props) {
   const columns = viewData.columns || 3;
   const items = viewData.items;
 
-  const stelscout = window.location.pathname.split("/").slice(-2)[0];
+  //const stelscout = window.location.pathname.split("/").slice(-2)[0];
 
   return (
     <div className={`view view--${theme}`}>
@@ -34,11 +34,7 @@ function CategoryView({ viewData }, props) {
       </header>
       <section className={`subcategory-list cols--${columns}`}>
         {items.map((item) => (
-          <div
-            className="nav-item"
-            key={item.category}
-            
-          >
+          <div className="nav-item" key={item.category}>
             <div className="pdfcase">
               <div className="pdfview">
                 <Dropzone
@@ -72,25 +68,20 @@ function CategoryView({ viewData }, props) {
                     <Dropzone.Idle>
                       {/* <IconFileTypePdf size="3.2rem" stroke={1.5} /> */}
                       <figure className="item_image">
-                        
-                          <img
-                            src={item.image}
-                            alt={`category-${item.category}`}
-                          />
-                        
+                        <img
+                          src={item.image}
+                          alt={`category-${item.category}`}
+                        />
                       </figure>
                     </Dropzone.Idle>
-
-                   
                   </Group>
                 </Dropzone>
               </div>
             </div>
-            
+
             <Link to={item.target}>
               <Text className="pdfname item_category">{item.category}</Text>
             </Link>
-            
           </div>
         ))}
       </section>

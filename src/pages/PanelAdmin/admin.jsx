@@ -4,7 +4,7 @@ import Cuenta from "./Card";
 import addw from "./../../Assets/add_yellow.svg";
 import { useHover } from "@mantine/hooks";
 import { useDisclosure } from "@mantine/hooks";
-import addFTP from "./addFTP";
+//import addFTP from "./addFTP";
 
 function Admin() {
   const { hovered, ref } = useHover();

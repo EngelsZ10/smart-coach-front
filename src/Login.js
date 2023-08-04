@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import Validation from "./LoginValidation";
 import axios from "axios";
 import "./Login.css";
-import "./data/variables";
 
 function Login() {
   const [values, setValues] = useState({
