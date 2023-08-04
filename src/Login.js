@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom"; // Import useNavigate here
 import Validation from "./LoginValidation";
 import axios from "axios";
 import "./Login.css";
@@ -11,7 +10,6 @@ function Login() {
     password: "",
     categoria: "",
   });
-  const navigate = useNavigate();
   const [selectedCategory, setSelectedCategory] = useState("");
   const [categorias] = useState([
     "Baby",
@@ -45,7 +43,6 @@ function Login() {
     event.preventDefault();
     const validationErrors = Validation(values);
     setErrors(validationErrors);
-
     if (validationErrors.email === "" && validationErrors.password === "") {
       axios
         .get("https://back.smartcoach.top/login.php", {
@@ -56,7 +53,6 @@ function Login() {
           },
         })
         .then((res) => {
-          console.log(res);
           if (res.data.response === 1) {
             localStorage.setItem("credenciales", {
               email: values.email,
@@ -64,7 +60,7 @@ function Login() {
               equipo: selectedCategory,
             });
             localStorage.setItem("adminStatus", res.data.admin);
-            navigate("/home");
+            window.location.reload();
           } else {
             alert("Datos incorrectos y/o registro inexistente");
           }
