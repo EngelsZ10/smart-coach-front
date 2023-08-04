@@ -1,4 +1,3 @@
-
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 import React, { useEffect, useState } from "react";
 import NavScreen from "./pages/navigationScreen";
@@ -7,7 +6,7 @@ import Login from "./Login";
 import CategoryView from "./pages/CategoryView";
 import navigation from "./data/navigation.json";
 import VideoList from "./pages/VideoList";
-import DocumentViews from './pages/DocumentViews';r
+import DocumentViews from "./pages/DocumentViews";
 import Admin from "./pages/PanelAdmin/admin";
 import ProtectedRoute from "./pages/rerouting/protectedRoute";
 import ProtectedLogin from "./pages/rerouting/protectedlogin";
