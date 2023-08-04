@@ -45,11 +45,10 @@ function Login() {
     event.preventDefault();
     const validationErrors = Validation(values);
     setErrors(validationErrors);
-    //navigate("/home"); //borrar después
 
     if (validationErrors.email === "" && validationErrors.password === "") {
       axios
-        .get(backlink + "/login", {
+        .get("https://back.smartcoach.top/login.php", {
           params: {
             email: values.email,
             pass: values.password,
@@ -57,13 +56,14 @@ function Login() {
           },
         })
         .then((res) => {
-          if (res.data.response === true) {
+          console.log(res);
+          if (res.data.response === 1) {
             localStorage.setItem("credenciales", {
               email: values.email,
               pass: values.password,
               equipo: selectedCategory,
             });
-            localStorage.setItem("adminStatus", res.data.Admin);
+            localStorage.setItem("adminStatus", res.data.admin);
             navigate("/home");
           } else {
             alert("Datos incorrectos y/o registro inexistente");

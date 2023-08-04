@@ -13,29 +13,28 @@ import ProtectedAdmin from "./pages/rerouting/protectedAdmin";
 
 export default function App() {
   const [credenciales, setcredenciales] = useState("");
+  const [isadmin, setisadmin] = useState("");
+
   useEffect(() => {
-    const valueFromLocalStorage = localStorage.getItem("credenciales");
+    var valueFromLocalStorage = localStorage.getItem("credenciales");
     setcredenciales(valueFromLocalStorage);
+    valueFromLocalStorage = localStorage.getItem("adminStatus");
+    setisadmin(valueFromLocalStorage);
   }, []);
   return (
     <BrowserRouter>
       <Routes>
+        <Route element={<ProtectedLogin credenciales={credenciales} />}>
+          <Route path="/" element={<Login />} />
+        </Route>
+
         <Route
-          path="/"
           element={
-            <ProtectedLogin>
-              <Login />
-            </ProtectedLogin>
+            <ProtectedAdmin credenciales={credenciales} admin={isadmin} />
           }
-        />
-        <Route
-          path="/admin"
-          element={
-            <ProtectedAdmin admin={true}>
-              <Admin />
-            </ProtectedAdmin>
-          }
-        />
+        >
+          <Route path="/admin" element={<Admin />} />
+        </Route>
         <Route element={<ProtectedRoute credenciales={credenciales} />}>
           <Route path="/home" element={<NavScreen />} />
           <Route path="/videos" element={<VideoList />} />

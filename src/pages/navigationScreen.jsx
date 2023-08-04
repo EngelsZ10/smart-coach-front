@@ -5,14 +5,15 @@ import "./navigationScreen.css";
 import { useEffect, useState } from "react";
 
 function NavScreen() {
-  const [isadmin, setisadmin] = useState("");
+  const [isadmin, setisadmin] = useState(0);
 
   useEffect(() => {
     // Read the constant value from localStorage when the component mounts
-    const valueFromLocalStorage =
-      localStorage.getItem("adminStatus") === "true";
+    const valueFromLocalStorage = localStorage.getItem("adminStatus");
+    console.log(valueFromLocalStorage);
     setisadmin(valueFromLocalStorage);
-  }, []);
+    console.log(isadmin);
+  }, [isadmin]);
   return (
     <div className="background-container">
       <MantineProvider withGlobalStyles withNormalizeCSS>
@@ -36,7 +37,7 @@ function NavScreen() {
             <Text className="Title2" style={{ color: "white" }}>
               ELIJA LA OPCIÓN DESEADA DANDO CLICK EN EL RECUADRO
             </Text>
-            {isadmin ? (
+            {isadmin === 1 ? (
               <Link to={"/admin"} className="Link">
                 <div className="navOption">
                   <button className="navButton">
