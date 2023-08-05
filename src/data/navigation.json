@@ -269,52 +269,27 @@
   "playbook": {
     "title": "playbook",
     "theme": "blue",
-    "columns": 3,
+    "columns": 4,
     "items": [
       {
-        "category": "baby",
-        "image": "/Logos/playbook/playbook baby las tres.png",
+        "category": "corridas",
+        "image": "/Logos/playbook/___/corridas.png",
         "target": "baby"
       },
       {
-        "category": "flag",
-        "image": "/Logos/playbook/flag.png",
+        "category": "defensa",
+        "image": "/Logos/playbook/___/defensa.png",
         "target": "flag"
       },
       {
-        "category": "infantil 1",
-        "image": "/Logos/playbook/playbook infantil.png",
+        "category": "equipos especiales",
+        "image": "/Logos/playbook/___/equipos especiales.png",
         "target": "infantil1"
       },
       {
-        "category": "infantil 2",
-        "image": "/Logos/playbook/playbook infantil.png",
-        "target": "infantil2"
-      },
-      {
-        "category": "infantil 3",
-        "image": "/Logos/playbook/playbook infantil.png",
-        "target": "infantil3"
-      },
-      {
-        "category": "infantil 4",
-        "image": "/Logos/playbook/playbook infantil.png",
-        "target": "infantil4"
-      },
-      {
-        "category": "infantil 5",
-        "image": "/Logos/playbook/playbook infantil.png",
-        "target": "infantil5"
-      },
-      {
-        "category": "infantil 6",
-        "image": "/Logos/playbook/playbook infantil.png",
-        "target": "infantil6"
-      },
-      {
-        "category": "juvenil",
-        "image": "/Logos/playbook/playbook juvenil.png",
-        "target": "juvenil"
+        "category": "pases",
+        "image": "/Logos/playbook/___/pases.png",
+        "target": "especiales"
       }
     ]
   },

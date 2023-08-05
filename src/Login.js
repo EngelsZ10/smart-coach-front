@@ -56,8 +56,11 @@ function Login() {
             localStorage.setItem("credenciales", {
               email: values.email,
               pass: values.password,
-              equipo: selectedCategory,
             });
+            localStorage.setItem(
+              "equipo",
+              res.data.admin === 1 ? "flag" : selectedCategory.toLowerCase()
+            );
             localStorage.setItem("adminStatus", res.data.admin);
             window.location.reload();
           } else {

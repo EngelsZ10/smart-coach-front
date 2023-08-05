@@ -103,7 +103,7 @@ export default function App() {
           <Route path="playbook">
             <Route
               index
-              element={<CategoryView viewData={navigation.playbook} />}
+              element={<DocumentViews viewData={navigation.playbook} />}
             />
           </Route>
 

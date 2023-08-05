@@ -82,7 +82,10 @@ function CategoryView({ viewData }, props) {
                         {/* <IconFileTypePdf size="3.2rem" stroke={1.5} /> */}
                         <figure className="item_image">
                           <img
-                            src={item.image}
+                            src={item.image.replace(
+                              "___",
+                              localStorage.getItem("equipo")
+                            )}
                             alt={`category-${item.category}`}
                           />
                         </figure>
@@ -98,7 +101,9 @@ function CategoryView({ viewData }, props) {
                 withArrow
                 shadow="md"
               >
-                <Link to={item.target}>
+                <Link
+                  to={`http://localhost:8080/myapp/getPDF.php?dir=/datos/&filename=${item.category}`}
+                >
                   <Popover.Target>
                     <Text className="pdfname item_category">
                       {item.category}
@@ -118,7 +123,7 @@ function CategoryView({ viewData }, props) {
                       color="green"
                       size="sm"
                       onClick={() => {
-                        handlers.toggle();
+                        handlers.open();
                         var formdata = new FormData();
                         formdata.append("File", file, file.name);
                         var requestOptions = {
@@ -128,13 +133,13 @@ function CategoryView({ viewData }, props) {
                         };
 
                         fetch(
-                          `http://localhost:8080/myapp/uploadFile.php?dir=/datos/&filename=${item.category}`,
+                          `http://localhost:8080/myapp/uploadPDF.php?dir=/datos/&filename=${item.category}`,
                           requestOptions
                         )
                           .then((response) => {
                             popoverOpened[item.category] = false;
                             setfile("");
-                            handlers.toggle();
+                            handlers.close();
                             return response.text();
                           })
                           .then((result) => console.log(result))
@@ -143,7 +148,14 @@ function CategoryView({ viewData }, props) {
                     >
                       enviar
                     </Button>
-                    <Button color="red" size="sm" onClick={() => {}}>
+                    <Button
+                      color="red"
+                      size="sm"
+                      onClick={() => {
+                        popoverOpened[item.category] = false;
+                        setfile("");
+                      }}
+                    >
                       cancelar
                     </Button>
                   </Group>
