@@ -198,42 +198,42 @@
       {
         "category": "linea ofensiva",
         "image": "/Logos/drills/drill de posicion linea ofensiva.png",
-        "target": "/videos?categoria=drills&tipo=linea-ofensiva"
+        "target": "/videos?equipo=drills&categoria=linea-ofensiva"
       },
       {
         "category": "corredores",
         "image": "/Logos/drills/DRILLS DE POSICION CORREDORES.png",
-        "target": "/videos?categoria=drills&tipo=corredores"
+        "target": "/videos?equipo=drills&categoria=corredores"
       },
       {
         "category": "qb",
         "image": "/Logos/drills/DRILLS DE POSICION Q BACK.png",
-        "target": "/videos?categoria=drills&tipo=qb"
+        "target": "/videos?equipo=drills&categoria=qb"
       },
       {
         "category": "receptores y alas c.",
         "image": "/Logos/drills/DRILLS DE POSICION RECEPTORES Y ALAS C..png",
-        "target": "/videos?categoria=drills&tipo=receptores-y-alas-c"
+        "target": "/videos?equipo=drills&categoria=receptores y alas c"
       },
       {
         "category": "linea defensiva",
         "image": "/Logos/drills/DRILLS DE POSICION LINEA DEFENSIVA.png",
-        "target": "/videos?categoria=drills&tipo=linea-de-defensiva"
+        "target": "/videos?equipo=drills&categoria=linea defensiva"
       },
       {
         "category": "linebackers",
         "image": "/Logos/drills/DRILLS DE POSICION LINEBACKERS.png",
-        "target": "/videos?categoria=drills&tipo=linebackers"
+        "target": "/videos?equipo=drills&categoria=linebackers"
       },
       {
         "category": "perimetro",
         "image": "/Logos/drills/DRILLS DE POSICION PERIMETRO.png",
-        "target": "/videos?categoria=drills&tipo=perimetro"
+        "target": "/videos?equipo=drills&categoria=perimetro"
       },
       {
         "category": "pateadores",
         "image": "/Logos/drills/DRILLS DE POSICION PATEADORES.png",
-        "target": "/videos?categoria=drills&tipo=pateadores"
+        "target": "/videos?equipo=drills&categoria=pateadores"
       }
     ]
   },
@@ -246,22 +246,22 @@
       {
         "category": "flag",
         "image": "/Logos/acond/ACONDICIONAMIENTO FISICO FLAG.png",
-        "target": "flag"
+        "target": "/videos?equipo=acondicionamiento físico&categoria=flag"
       },
       {
         "category": "infantiles chicas",
         "image": "/Logos/acond/ACONDICIONAMIENTO FISICO INFANTILES CHICAS.png",
-        "target": "infantiles chicas"
+        "target": "/videos?equipo=acondicionamiento físico&categoria=infantiles chicas"
       },
       {
         "category": "infantiles grandes",
         "image": "/Logos/acond/ACONDICIONAMIENTO FISICO INFANTILES GRANDES.png",
-        "target": "infantiles grandes"
+        "target": "/videos?equipo=acondicionamiento físico&categoria=infantiles grandes"
       },
       {
         "category": "juvenil",
         "image": "/Logos/acond/ACONDICIONAMIENTO FISICO JUVENIL.png",
-        "target": "juvenil"
+        "target": "/videos?equipo=acondicionamiento físico&categoria=juvenil"
       }
     ]
   },
