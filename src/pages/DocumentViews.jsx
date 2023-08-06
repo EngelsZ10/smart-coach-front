@@ -102,7 +102,9 @@ function CategoryView({ viewData }, props) {
                 shadow="md"
               >
                 <Link
-                  to={`http://localhost:8080/myapp/getPDF.php?dir=/datos/&filename=${item.category}`}
+                  to={`https://back.smartcoach.top/getPDF.php?dir=public_html/back/datos/${localStorage.getItem(
+                    "equipo"
+                  )}/${viewData.title}&filename=${item.category}`}
                 >
                   <Popover.Target>
                     <Text className="pdfname item_category">
@@ -133,7 +135,9 @@ function CategoryView({ viewData }, props) {
                         };
 
                         fetch(
-                          `http://localhost:8080/myapp/uploadPDF.php?dir=/datos/&filename=${item.category}`,
+                          `http://back.smartcoach.top/uploadPDF.php?dir=public_html/back/datos/${localStorage.getItem(
+                            "equipo"
+                          )}/${viewData.title}&filename=${item.category}`,
                           requestOptions
                         )
                           .then((response) => {
