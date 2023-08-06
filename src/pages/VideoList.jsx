@@ -136,13 +136,18 @@ function VideoList() {
       <Dropzone
         loading={able}
         onDrop={(files) => {
+          //start
+          setAble(true);
           var file = files[0];
           var formdata = new FormData();
           var requestOptions = {
             method: "POST",
             redirect: "follow",
           };
-          console.log(file.type);
+          var team = localStorage.getItem("equipo");
+          var dir = tipo ? "/" + tipo : "";
+
+          // is image
           if (files[0].type.includes("image/")) {
             console.log("upload image");
             var reader = new FileReader();
@@ -151,8 +156,6 @@ function VideoList() {
               formdata.append("File", files[0]);
               formdata.append("Image", reader.result);
               requestOptions.body = formdata;
-              var team = localStorage.getItem("equipo");
-              var dir = tipo ? "/" + tipo : "";
 
               fetch(
                 `http://localhost:8080/myapp/uploadFile.php?dir=public_html/back/datos/${team}/${equipo}/${categoria}${dir}&filename=${files[0].name}`,
@@ -163,15 +166,18 @@ function VideoList() {
                 .catch((error) => console.log("error", error));
             };
             reader.readAsDataURL(file);
+            setAble(false);
             return;
           }
 
-          if (!files[0].type.includes("video/")) return;
+          //is not video
+          if (!files[0].type.includes("video/")) {
+            setAble(false);
+            return;
+          }
 
-          setAble(true);
-          var url = URL.devDependencies(file);
-          console.log(url);
-
+          //isvideo
+          var url = URL.createObjectURL(file);
           var video = document.createElement("video");
           video.src = url;
           video.currentTime = 3;
@@ -186,16 +192,17 @@ function VideoList() {
             formdata.append("Image", canvas.toDataURL("image/png"));
             setImage(canvas.toDataURL("image/png"));
             requestOptions.body = formdata;
-
-            /*  fetch(
-              "http://localhost:8080/myapp/uploadFile.php?dir=public_html/back/datos/&filename=archivo",
+            fetch(
+              `http://localhost:8080/myapp/uploadFile.php?dir=public_html/back/datos/${team}/${equipo}/${categoria}${dir}&filename=${files[0].name}`,
               requestOptions
             )
               .then((response) => response.text())
-              .then((result) => console.log(result))
-              .catch((error) => console.log("error", error)); */
-            video.removeEventListener("canplay", snapshot);
-            setAble(false);
+              .then((result) => {
+                setAble(false);
+                video.removeEventListener("canplay", snapshot);
+                console.log(result);
+              })
+              .catch((error) => console.log("error", error));
           };
           video.addEventListener("canplay", snapshot);
         }}
