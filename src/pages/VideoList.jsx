@@ -1,19 +1,15 @@
 import { useEffect, useState } from "react";
 import { useNavigate, useSearchParams } from "react-router-dom";
 import { useDisclosure } from "@mantine/hooks";
-import { Center, Group, Button } from "@mantine/core";
-import Demo from "../Components/uploadPage";
+import { Modal, ActionIcon } from "@mantine/core";
 import { Dropzone } from "@mantine/dropzone";
-
+import { IconX } from "@tabler/icons-react";
 import MostrarVideo from "./mostrarVideo";
 
 import "./VideoList.css";
-import { render } from "@testing-library/react";
+import "./CategoryView.css";
 
 function VideoList() {
-  const [image, setImage] = useState(
-    "https://e2.365dm.com/21/09/2048x1152/skysports-nfl-logo-badge_5530522.jpg"
-  );
   const [able, setAble] = useState(false);
   const [videos, setVideos] = useState([]);
   const [searchParams] = useSearchParams();
@@ -26,29 +22,12 @@ function VideoList() {
 
   const theme = getTheme();
 
-  function Upload() {
-    const [opened, { toggle, close }] = useDisclosure(false);
-
-    return (
-      <>
-        <div className="App">
-          <Center maw={400} h={100} mx="auto">
-            <Group position="center">
-              <Button onClick={toggle}>Toggle dialog</Button>
-            </Group>
-          </Center>
-        </div>
-
-        <Demo open={opened} close={close}></Demo>
-      </>
-    );
-  }
-
   function getTheme() {
     let theme;
     switch (equipo) {
       case "steelers":
         theme = "black";
+        break;
       case "drills":
         theme = "white";
         break;
@@ -97,8 +76,19 @@ function VideoList() {
     fetchVideos();
   }, []);
 
+  const [opened, { open, close }] = useDisclosure(false);
+  const [link, setLink] = useState({ name: "", link: "" });
   return (
     <div className={`list-view view--${theme}`}>
+      <Modal
+        color="red"
+        opened={opened}
+        fullScreen
+        onClose={close}
+        title={link.name}
+      >
+        <MostrarVideo link={link.link} equipo={equipo} />
+      </Modal>
       <header className="view_header">
         <div className="container">
           <h3 className="header_title">Videos</h3>
@@ -120,16 +110,36 @@ function VideoList() {
           />
         </figure>
       </header>
-      <Upload />
       <div className="video-list">
         {videos.map((video) => (
-          <div className="video" key={video.id}>
-            <img
-              className="video_thumbnail"
-              src={image /* video.thumbnailUrl */}
-              alt={video.name}
-            />
-            <div className="item_category">{video.name}</div>
+          <div className="video nav-item" key={video.id}>
+            <ActionIcon
+              color="red"
+              radius="xl"
+              variant="filled"
+              style={{ marginBottom: -12, margin: -12 }}
+            >
+              <IconX />
+            </ActionIcon>
+
+            <div
+              onClick={() => {
+                var team = localStorage.getItem("equipo");
+                var dir = tipo ? "/" + tipo : "";
+                setLink({
+                  name: video.name,
+                  link: `${team}/${equipo}/${categoria}${dir}/${video.name}`,
+                });
+                open();
+              }}
+            >
+              <img
+                className="video_thumbnail"
+                src={video.thumbnailUrl}
+                alt={video.name}
+              />
+              <div className="item_category">{video.name}</div>
+            </div>
           </div>
         ))}
       </div>
@@ -149,16 +159,14 @@ function VideoList() {
 
           // is image
           if (files[0].type.includes("image/")) {
-            console.log("upload image");
             var reader = new FileReader();
             reader.onloadend = function () {
-              console.log("onload");
               formdata.append("File", files[0]);
               formdata.append("Image", reader.result);
               requestOptions.body = formdata;
 
               fetch(
-                `http://localhost:8080/myapp/uploadFile.php?dir=public_html/back/datos/${team}/${equipo}/${categoria}${dir}&filename=${files[0].name}`,
+                `http://localhost:8080/myapp/uploadFile.php?dir=${team}/${equipo}/${categoria}${dir}&filename=${files[0].name}`,
                 requestOptions
               )
                 .then((response) => response.text())
@@ -180,30 +188,32 @@ function VideoList() {
           var url = URL.createObjectURL(file);
           var video = document.createElement("video");
           video.src = url;
-          video.currentTime = 3;
 
           var snapshot = function () {
             var canvas = document.createElement("canvas");
             var ctx = canvas.getContext("2d");
-
+            video.currentTime = 3;
             ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
 
             formdata.append("File", files[0]);
             formdata.append("Image", canvas.toDataURL("image/png"));
-            setImage(canvas.toDataURL("image/png"));
             requestOptions.body = formdata;
+            video.removeEventListener("canplay", snapshot);
             fetch(
-              `http://localhost:8080/myapp/uploadFile.php?dir=public_html/back/datos/${team}/${equipo}/${categoria}${dir}&filename=${files[0].name}`,
+              `http://localhost:8080/myapp/uploadFile.php?dir=${team}/${equipo}/${categoria}${dir}&filename=${files[0].name}`,
               requestOptions
             )
-              .then((response) => response.text())
-              .then((result) => {
+              .then((response) => {
                 setAble(false);
-                video.removeEventListener("canplay", snapshot);
-                console.log(result);
+                return response.text();
               })
-              .catch((error) => console.log("error", error));
+              .then((result) => console.log(result))
+              .catch((error) => {
+                setAble(false);
+                console.log("error", error);
+              });
           };
+
           video.addEventListener("canplay", snapshot);
         }}
         style={{
