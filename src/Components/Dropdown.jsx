@@ -1,11 +1,5 @@
 import { useRef } from "react";
-import {
-  Text,
-  Group,
-  Button,
-  createStyles,
-  rem
-} from "@mantine/core";
+import { Text, Group, Button, createStyles, rem } from "@mantine/core";
 import { Dropzone, MIME_TYPES } from "@mantine/dropzone";
 import uploadIcon from "../Assets/upload-minimalistic-svgrepo-com.svg";
 import mal from "../Assets/cancel-svgrepo-com.svg";
@@ -39,7 +33,7 @@ const useStyles = createStyles((theme) => ({
 }));
 
 export function DropzoneButton() {
-  const { classes, theme } = useStyles();
+  const { classes } = useStyles();
   const openRef = useRef(5);
 
   return (
