@@ -37,8 +37,7 @@ export default function App() {
         >
           <Route path="/admin" element={<Admin />} />
         </Route>
-        {/* <Route element={<ProtectedRoute credenciales={credenciales} />}> */}
-        <Route>
+        <Route element={<ProtectedRoute credenciales={credenciales} />}>
           <Route path="/home" element={<NavScreen />} />
           <Route path="/videos" element={<VideoList />} />
           <Route path="/generador-jugadas" element={<PlayGenerator />} />
