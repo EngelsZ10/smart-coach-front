@@ -8,6 +8,7 @@ import navigation from "./data/navigation.json";
 import VideoList from "./pages/VideoList";
 import DocumentViews from "./pages/DocumentViews";
 import Admin from "./pages/PanelAdmin/admin";
+import PlayGenerator from "./pages/PlayGenerator";
 import ProtectedRoute from "./pages/rerouting/protectedRoute";
 import ProtectedLogin from "./pages/rerouting/protectedlogin";
 import ProtectedAdmin from "./pages/rerouting/protectedAdmin";
@@ -39,6 +40,7 @@ export default function App() {
         <Route element={<ProtectedRoute credenciales={credenciales} />}>
           <Route path="/home" element={<NavScreen />} />
           <Route path="/videos" element={<VideoList />} />
+          <Route path="/generador-jugadas" element={<PlayGenerator />} />
 
           <Route path="scout">
             <Route
