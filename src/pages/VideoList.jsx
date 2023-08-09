@@ -1,11 +1,10 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useCallback } from "react";
 import { useNavigate, useSearchParams } from "react-router-dom";
 import { useDisclosure } from "@mantine/hooks";
 import { Modal, ActionIcon } from "@mantine/core";
 import { Dropzone } from "@mantine/dropzone";
 import { IconX } from "@tabler/icons-react";
 import MostrarVideo from "./mostrarVideo";
-
 import "./VideoList.css";
 import "./CategoryView.css";
 
@@ -17,7 +16,8 @@ function VideoList() {
   const equipo = searchParams.get("equipo");
   const categoria = searchParams.get("categoria");
   const tipo = searchParams.get("tipo");
-
+  const team = localStorage.getItem("equipo");
+  const dir = tipo ? "/" + tipo : "";
   const navigate = useNavigate();
 
   const theme = getTheme();
@@ -43,38 +43,45 @@ function VideoList() {
   }
 
   // TODO: Connect to db to retrieve real videos
-  function fetchVideos() {
-    setVideos([
-      {
-        id: "1",
-        name: "video 1",
-        thumbnailUrl:
-          "https://e2.365dm.com/21/09/2048x1152/skysports-nfl-logo-badge_5530522.jpg",
-      },
-      {
-        id: "2",
-        name: "video 2",
-        thumbnailUrl:
-          "https://e2.365dm.com/21/09/2048x1152/skysports-nfl-logo-badge_5530522.jpg",
-      },
-      {
-        id: "3",
-        name: "video 3",
-        thumbnailUrl:
-          "https://e2.365dm.com/21/09/2048x1152/skysports-nfl-logo-badge_5530522.jpg",
-      },
-      {
-        id: "4",
-        name: "video 4",
-        thumbnailUrl:
-          "https://e2.365dm.com/21/09/2048x1152/skysports-nfl-logo-badge_5530522.jpg",
-      },
-    ]);
-  }
+  /* function fetchVideos() {
+    var requestOptions = {
+      method: "GET",
+      redirect: "follow",
+    };
+
+    fetch(
+      `https://back.smartcoach.top/getList.php?dir=/${team}/${equipo}/${categoria}${dir}/`,
+      requestOptions
+    )
+      .then((response) => response.text())
+      .then((result) => {
+        console.log(JSON.parse(result));
+        setVideos(JSON.parse(result));
+      })
+      .catch((error) => console.log("error", error));
+  } */
+
+  const fetchVideos = useCallback(() => {
+    var requestOptions = {
+      method: "GET",
+      redirect: "follow",
+    };
+
+    fetch(
+      `https://back.smartcoach.top/getList.php?dir=/${team}/${equipo}/${categoria}${dir}/`,
+      requestOptions
+    )
+      .then((response) => response.text())
+      .then((result) => {
+        console.log(JSON.parse(result));
+        setVideos(JSON.parse(result));
+      })
+      .catch((error) => console.log("error", error));
+  }, [team, equipo, categoria, dir]);
 
   useEffect(() => {
     fetchVideos();
-  }, []);
+  }, [fetchVideos]);
 
   const [opened, { open, close }] = useDisclosure(false);
   const [link, setLink] = useState({ name: "", link: "" });
@@ -118,6 +125,21 @@ function VideoList() {
               radius="xl"
               variant="filled"
               style={{ marginBottom: -12, margin: -12 }}
+              onClick={() => {
+                var requestOptions = {
+                  method: "GET",
+                  redirect: "follow",
+                };
+
+                fetch(
+                  `https://back.smartcoach.top/delFile.php?dir=/${team}/${equipo}/${categoria}${dir}/&filename=${video.name}`,
+                  requestOptions
+                )
+                  .then((response) => response.text())
+                  .then((result) => console.log(result))
+                  .catch((error) => console.log("error", error));
+                fetchVideos();
+              }}
             >
               <IconX />
             </ActionIcon>
@@ -149,32 +171,34 @@ function VideoList() {
           //start
           setAble(true);
           var file = files[0];
-          var formdata = new FormData();
-          var requestOptions = {
-            method: "POST",
-            redirect: "follow",
-          };
-          var team = localStorage.getItem("equipo");
-          var dir = tipo ? "/" + tipo : "";
-
           // is image
           if (files[0].type.includes("image/")) {
             var reader = new FileReader();
             reader.onloadend = function () {
+              var formdata = new FormData();
               formdata.append("File", files[0]);
               formdata.append("Image", reader.result);
-              requestOptions.body = formdata;
+
+              var requestOptions = {
+                method: "POST",
+                body: formdata,
+                redirect: "follow",
+              };
 
               fetch(
-                `http://localhost:8080/myapp/uploadFile.php?dir=${team}/${equipo}/${categoria}${dir}&filename=${files[0].name}`,
+                `https://back.smartcoach.top/prueba.php?dir=${team}/${equipo}/${categoria}${dir}`,
                 requestOptions
               )
-                .then((response) => response.text())
+                .then((response) => {
+                  fetchVideos();
+                  response.text();
+                  setAble(false);
+                })
                 .then((result) => console.log(result))
                 .catch((error) => console.log("error", error));
             };
             reader.readAsDataURL(file);
-            setAble(false);
+
             return;
           }
 
@@ -186,25 +210,36 @@ function VideoList() {
 
           //isvideo
           var url = URL.createObjectURL(file);
+
           var video = document.createElement("video");
           video.src = url;
+          video.currentTime = 3;
 
           var snapshot = function () {
             var canvas = document.createElement("canvas");
+            canvas.width = video.videoWidth; // returns the intrinsic height of the video
+            canvas.height = video.videoHeight;
             var ctx = canvas.getContext("2d");
-            video.currentTime = 3;
             ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
-
-            formdata.append("File", files[0]);
-            formdata.append("Image", canvas.toDataURL("image/png"));
-            requestOptions.body = formdata;
             video.removeEventListener("canplay", snapshot);
+            var formdata = new FormData();
+            formdata.append("File", files[0]);
+            formdata.append("Image", canvas.toDataURL("image/jpg"));
+
+            var requestOptions = {
+              method: "POST",
+              body: formdata,
+              redirect: "follow",
+            };
+
             fetch(
-              `http://localhost:8080/myapp/uploadFile.php?dir=${team}/${equipo}/${categoria}${dir}&filename=${files[0].name}`,
+              `https://back.smartcoach.top/prueba.php?dir=${team}/${equipo}/${categoria}${dir}`,
               requestOptions
             )
               .then((response) => {
                 setAble(false);
+                fetchVideos();
+
                 return response.text();
               })
               .then((result) => console.log(result))
