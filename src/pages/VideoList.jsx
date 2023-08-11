@@ -42,25 +42,6 @@ function VideoList() {
     return theme;
   }
 
-  // TODO: Connect to db to retrieve real videos
-  /* function fetchVideos() {
-    var requestOptions = {
-      method: "GET",
-      redirect: "follow",
-    };
-
-    fetch(
-      `https://back.smartcoach.top/getList.php?dir=/${team}/${equipo}/${categoria}${dir}/`,
-      requestOptions
-    )
-      .then((response) => response.text())
-      .then((result) => {
-        console.log(JSON.parse(result));
-        setVideos(JSON.parse(result));
-      })
-      .catch((error) => console.log("error", error));
-  } */
-
   const fetchVideos = useCallback(() => {
     var requestOptions = {
       method: "GET",
@@ -217,8 +198,6 @@ function VideoList() {
 
           var snapshot = function () {
             var canvas = document.createElement("canvas");
-            canvas.width = video.videoWidth; // returns the intrinsic height of the video
-            canvas.height = video.videoHeight;
             var ctx = canvas.getContext("2d");
             ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
             video.removeEventListener("canplay", snapshot);
