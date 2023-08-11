@@ -102,9 +102,10 @@ function CategoryView({ viewData }, props) {
                 shadow="md"
               >
                 <Link
-                  to={`https://back.smartcoach.top/getPDF.php?dir=public_html/back/datos/${localStorage.getItem(
+                  to={`https://back.smartcoach.top/readPDF.php?dir=public_html/back/datos/${localStorage.getItem(
                     "equipo"
                   )}/${viewData.title}&filename=${item.category}`}
+                  download={`${item.category}.pdf`}
                 >
                   <Popover.Target>
                     <Text className="pdfname item_category">
@@ -126,7 +127,31 @@ function CategoryView({ viewData }, props) {
                       size="sm"
                       onClick={() => {
                         handlers.open();
+
                         var formdata = new FormData();
+                        formdata.append("File", file);
+
+                        var requestOptions = {
+                          method: "POST",
+                          body: formdata,
+                          redirect: "follow",
+                        };
+                        var equipo = localStorage.getItem("equipo");
+
+                        fetch(
+                          `https://back.smartcoach.top/uploadPDF.php?dir=datos/${equipo}/${viewData.title}&filename=${item.category}`,
+                          requestOptions
+                        )
+                          .then((response) => {
+                            popoverOpened[item.category] = false;
+                            setfile("");
+                            handlers.close();
+                            return response.text();
+                          })
+                          .then((result) => console.log(result))
+                          .catch((error) => console.log("error", error));
+
+                        /*  var formdata = new FormData();
                         formdata.append("File", file, file.name);
                         var requestOptions = {
                           method: "POST",
@@ -147,7 +172,7 @@ function CategoryView({ viewData }, props) {
                             return response.text();
                           })
                           .then((result) => console.log(result))
-                          .catch((error) => console.log("error", error));
+                          .catch((error) => console.log("error", error)); */
                       }}
                     >
                       enviar
