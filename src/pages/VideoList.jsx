@@ -66,6 +66,7 @@ function VideoList() {
 
   const [opened, { open, close }] = useDisclosure(false);
   const [link, setLink] = useState({ name: "", link: "" });
+  const [isVideo, setIsVideo] = useState("video");
   return (
     <div className={`list-view view--${theme}`}>
       <Modal
@@ -75,7 +76,7 @@ function VideoList() {
         onClose={close}
         title={link.name}
       >
-        <MostrarVideo link={link.link} equipo={equipo} />
+        <MostrarVideo link={link.link} equipo={equipo} medio={isVideo} />
       </Modal>
       <header className="view_header">
         <div className="container">
@@ -129,16 +130,24 @@ function VideoList() {
               onClick={() => {
                 var team = localStorage.getItem("equipo");
                 var dir = tipo ? "/" + tipo : "";
+                const images = ["jpg", "gif", "png"];
+
+                const url = new URL("https://smartcoach.top/" + video.name);
+                const extension = url.pathname.split(".")[1];
+                setIsVideo("video");
+                if (images.includes(extension)) {
+                  setIsVideo("image");
+                }
                 setLink({
                   name: video.name,
-                  link: `${team}/${equipo}/${categoria}${dir}/${video.name}`,
+                  link: `/${team}/${equipo}/${categoria}/${dir}/${video.name}`,
                 });
                 open();
               }}
             >
               <img
                 className="video_thumbnail"
-                src={video.thumbnailUrl}
+                src={video.link}
                 alt={video.name}
               />
               <div className="item_category">{video.name}</div>

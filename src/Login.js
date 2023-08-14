@@ -11,18 +11,16 @@ function Login() {
   });
   const [selectedCategory, setSelectedCategory] = useState("");
   const [categorias] = useState([
-    "Baby",
-    "Falcons",
-    "Flag",
-    "Hornets",
-    "Intermedia",
-    "Irons",
-    "Juvenil",
-    "Master",
-    "Ponys",
-    "Rabbits",
-    "Tauros",
-    "Admin",
+    "flag",
+    "juveniles",
+    "infantil 1",
+    "infantil 2",
+    "infantil 3",
+    "infantil 4",
+    "infantil 5",
+    "infantil 6",
+    "baby",
+    "admin",
   ]);
 
   const [errors, setErrors] = useState({});
@@ -44,7 +42,7 @@ function Login() {
     setErrors(validationErrors);
     if (validationErrors.email === "" && validationErrors.password === "") {
       axios
-        .get("https://back.smartcoach.top/login.php", {
+        .get("https://back.smartcoach.top/Log.php", {
           params: {
             email: values.email,
             pass: values.password,

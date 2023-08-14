@@ -173,13 +173,22 @@ function MostrarVideo(props) {
       </Group>
 
       <div class="cuerpo">
-        {/*Agrega aqui el video*/}
-        <video
-          controls
-          width={"75%"}
-          preload="auto"
-          src={`https://cuenta:cuenta@ftp10@smartcoach.top/back/datos${props.link}`}
-        ></video>
+        {props.medio === "video" ? (
+          <video
+            controls
+            width={"75%"}
+            preload="auto"
+            src={`https://smartcoach.top/back/datos${props.link}`}
+          ></video>
+        ) : (
+          <img
+            id="imagen"
+            width={"75%"}
+            alt={`${props.link}`}
+            src={`https://smartcoach.top/back/datos${props.link}`}
+          />
+        )}
+
         <canvas
           ref={canvasRef}
           onMouseMove={(e) => Draw(e)}
